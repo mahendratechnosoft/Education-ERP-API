@@ -1,0 +1,26 @@
+info:
+  name: getEmployees
+  type: http
+  seq: 3
+
+http:
+  method: put
+  url: http://localhost:8080/employee/getEmployees?query=&sort=createdDate%2Cdesc
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJjMTY3YjFiYi0zZDU3LTRiNTgtYjNiZi1hNzNlNGVhODc0N2IiLCJzdWIiOiJjb21wYW55QGdtYWlsLmNvbSIsImlhdCI6MTc4NTg2Njk3MSwiZXhwIjoxNzg2MDQ2OTcxfQ.c-7PpUiYmUBxljzdZce1o6InVpzCywIXA3VVt1sQmrFk-ynE1MkArJaAReewFlIF_XFgMA1vAyQ-y5UQOzcarQ
+  params:
+    - name: query
+      value: ""
+      type: query
+    - name: sort
+      value: createdDate%2Cdesc
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
