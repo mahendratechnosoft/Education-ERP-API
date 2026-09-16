@@ -1,0 +1,6 @@
+name: education
+variables:
+  - name: baseUrl
+    value: http://91.203.133.210:9093
+  - name: bearerToken
+    value: ""

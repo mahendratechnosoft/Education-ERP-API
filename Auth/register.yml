@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/register
+  url: "{{baseUrl}}/register"
   body:
     type: json
     data: |-
       {
           "username": "root",
-          "password": "root"
+          "password": "1234"
 
       }
   auth: inherit

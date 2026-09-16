@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/signin
+  url: "{{baseUrl}}/signin"
   headers:
     - name: Content-Type
       value: application/json
@@ -14,7 +14,7 @@ http:
     data: |-
       {
         "username": "root",
-        "password": "root"
+        "password": "1234"
       }
   auth: inherit
 
