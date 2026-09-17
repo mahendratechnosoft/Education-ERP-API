@@ -5,7 +5,51 @@ info:
 
 http:
   method: PUT
-  url: ""
+  url: "{{baseUrl}}/organization/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
+        "createdAt": "2026-09-17T10:28:27.020246",
+        "updatedAt": "2026-09-17T10:28:27.458409",
+        "createdBy": "root",
+        "creatorId": "8b4a8a3b-63ce-4c91-b07a-5a8661e3d4e3",
+        "updatedBy": "root",
+        "deleted": false,
+        "organizationId": null,
+        "organizationName": null,
+        "organizationCode": null,
+        "registrationNumber": null,
+        "organizationType": null,
+        "email": "info@smarttech.com",
+        "phone": null,
+        "website": null,
+        "address": "123, MG Road, Pune",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "postalCode": null,
+        "logo": null,
+        "description": null,
+        "loginEmail": "Org@gmail.com",
+        "user": {
+          "id": "bebe6ea5-d262-47e0-966e-c3a014bd05b9",
+          "createdAt": "2026-09-17T10:28:27.2606",
+          "updatedAt": "2026-09-17T10:28:27.2606",
+          "createdBy": "root",
+          "creatorId": "8b4a8a3b-63ce-4c91-b07a-5a8661e3d4e3",
+          "updatedBy": "root",
+          "deleted": false,
+          "organizationId": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
+          "name": null,
+          "username": "Org@gmail.com",
+          "role": "ORGANIZATION_ADMIN",
+          "enabled": false,
+          "expiryDate": "2027-11-08",
+          "timeZone": null
+        }
+      }
   auth: inherit
 
 settings:

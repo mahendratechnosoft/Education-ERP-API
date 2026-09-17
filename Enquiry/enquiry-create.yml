@@ -1,0 +1,29 @@
+info:
+  name: enquiry/create
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/enquiry/create"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@gmail.com",
+        "phone": "9876543210",
+        "program": "Engineering",
+        "qualification": "12th",
+        "status": "NEW",
+        "message": "I am interested in B.Tech Computer Science admission.",
+        "instituteId": "INS-001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

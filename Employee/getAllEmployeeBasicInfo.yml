@@ -1,11 +1,11 @@
 info:
-  name: getAllEmployeeIdAndName
+  name: getAllEmployeeBasicInfo
   type: http
   seq: 2
 
 http:
   method: get
-  url: http://localhost:8080/employee/getAllEmployeeIdAndName
+  url: http://localhost:8080/employee/getAllEmployeeBasicInfo
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJjMTY3YjFiYi0zZDU3LTRiNTgtYjNiZi1hNzNlNGVhODc0N2IiLCJzdWIiOiJjb21wYW55QGdtYWlsLmNvbSIsImlhdCI6MTc4NTg2Njk3MSwiZXhwIjoxNzg2MDQ2OTcxfQ.c-7PpUiYmUBxljzdZce1o6InVpzCywIXA3VVt1sQmrFk-ynE1MkArJaAReewFlIF_XFgMA1vAyQ-y5UQOzcarQ

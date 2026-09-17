@@ -1,11 +1,11 @@
 info:
-  name: checkExistingUsername
+  name: getByEmployeeId
   type: http
-  seq: 2
+  seq: 8
 
 http:
   method: GET
-  url: "{{baseUrl}}/user/checkExistingUsername/{username}"
+  url: "{{baseUrl}}/employee/getByEmployeeId/f1eeb853-a7c8-467c-aeb1-8a11f1d5e18b"
   auth: inherit
 
 settings:

@@ -1,0 +1,37 @@
+info:
+  name: update
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/enquiry/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "4b6a2569-d391-4d9c-b347-da69b661397c",
+        "createdAt": "2026-09-17T13:58:18.1386405",
+        "updatedAt": "2026-09-17T13:58:18.1386405",
+        "createdBy": "Org@gmail.com",
+        "creatorId": "bebe6ea5-d262-47e0-966e-c3a014bd05b9",
+        "updatedBy": "Org@gmail.com",
+        "deleted": false,
+        "organizationId": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@gmail.com",
+        "phone": "9876543210",
+        "program": "Engineering",
+        "qualification": "12th",
+        "status": "NEW",
+        "message": "I am interested in B.Tech Computer Science admission.",
+        "instituteId": "INS-001"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

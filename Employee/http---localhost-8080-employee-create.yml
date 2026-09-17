@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/employee/create
+  url: "{{baseUrl}}/employee/create"
   body:
     type: json
     data: |-
@@ -21,12 +21,10 @@ http:
         "shiftTime": "09:00 AM - 06:00 PM",
         "gender": "Male",
         "hiredate": "2026-07-04",
-        "username": "emp8@gmail.com",
+        "username": "emp98@gmail.com",
         "password": "Emp@123"
       }
-  auth:
-    type: bearer
-    token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiI1Zjc1YWU4OS0yOTljLTQwYzAtOGZkYi1jNGJjOTYyOTczY2IiLCJzdWIiOiJjb21wYW55NEBnbWFpbC5jb20iLCJpYXQiOjE3ODk1NTQ3ODksImV4cCI6MTc4OTczNDc4OX0.Rm0NELI7L_1yY_27Vn--3mofN6H3Rfn8z2RUdn5IGzuZAImox06ixstNE_sQtXbAwqQug4PMoGOLwZTl796ERw
+  auth: inherit
 
 settings:
   encodeUrl: true

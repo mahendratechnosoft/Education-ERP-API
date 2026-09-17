@@ -1,0 +1,32 @@
+info:
+  name: getAllEnquiry
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/enquiry/getAllEnquiry?page=0&size=10"
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "creatorIds":[],
+       "from": "",
+        "to": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
