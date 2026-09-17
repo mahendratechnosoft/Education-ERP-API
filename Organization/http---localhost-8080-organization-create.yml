@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/organization/create
+  url: "{{baseUrl}}/organization/create"
   body:
     type: json
     data: |-
@@ -19,7 +19,7 @@ http:
         "gstin": "27ABCDE1234F1Z5",
         "contactNumber": "9876543210",
         "email": "info@smarttech.com",
-        "loginEmail": "company2@gmail.com"
+        "loginEmail": "Org@gmail.com"
        
       }
   auth: inherit

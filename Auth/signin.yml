@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/signin
+  url: "{{baseUrl}}/signin"
   headers:
     - name: Content-Type
       value: application/json
@@ -13,10 +13,19 @@ http:
     type: json
     data: |-
       {
-        "username": "company4@gmail.com",
+        "username": "Org@gmail.com",
         "password": "Admin@123"
       }
-  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var jsonData = res.getBody();
+        var token = jsonData.jwtToken; 
+
+        bru.setEnvVar("bearerToken", token);
+        console.log("Token set to: " + bru.getEnvVar("bearerToken"));
 
 settings:
   encodeUrl: true

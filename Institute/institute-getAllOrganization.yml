@@ -1,17 +1,19 @@
 info:
-  name: getAllOrganization
+  name: institute/getAllOrganization
   type: http
-  seq: 2
+  seq: 6
 
 http:
   method: PUT
-  url: "{{baseUrl}}/organization/getAllOrganization"
+  url: "{{baseUrl}}/institute/getAllInstitute"
   body:
     type: json
     data: |-
       {
         "search": "",
-        "creatorIds": []
+        "creatorIds":[],
+        "from": "",
+        "to": ""
       }
   auth: inherit
 

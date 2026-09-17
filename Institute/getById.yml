@@ -1,11 +1,11 @@
 info:
-  name: updateOrganization
+  name: getById
   type: http
-  seq: 2
+  seq: 6
 
 http:
-  method: PUT
-  url: ""
+  method: GET
+  url: "{{baseUrl}}/institute/d3001dfe-81f4-42d4-9184-e9f452be96b8"
   auth: inherit
 
 settings:

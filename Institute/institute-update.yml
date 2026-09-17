@@ -1,15 +1,23 @@
 info:
-  name: institute/create
+  name: institute/update
   type: http
-  seq: 1
+  seq: 6
 
 http:
-  method: POST
-  url: "{{baseUrl}}/institute/create"
+  method: PUT
+  url: "{{baseUrl}}/institute/update"
   body:
     type: json
     data: |-
       {
+        "id": "d3001dfe-81f4-42d4-9184-e9f452be96b8",
+        "createdAt": "2026-09-17T10:44:10.2901722",
+        "updatedAt": "2026-09-17T10:44:10.2901722",
+        "createdBy": "Org@gmail.com",
+        "creatorId": "bebe6ea5-d262-47e0-966e-c3a014bd05b9",
+        "updatedBy": "Org@gmail.com",
+        "deleted": false,
+        "organizationId": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
         "instituteName": "ABC Engineering College",
         "shortName": "ABCEC",
         "instituteCode": "ABC-ENG-001",
