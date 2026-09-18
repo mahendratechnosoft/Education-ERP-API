@@ -1,0 +1,24 @@
+info:
+  name: "{{baseUrl}}/media/upload"
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/media/upload"
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - D:\Testing Images\grgur-vuckov-Ujn77KM2AGc-unsplash.jpg
+        contentType: image/jpeg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

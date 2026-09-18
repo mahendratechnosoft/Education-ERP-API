@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-        "username": "Org@gmail.com",
-        "password": "Admin@123"
+        "username": "root",
+        "password": "1234"
       }
 
 runtime:
