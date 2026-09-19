@@ -1,11 +1,11 @@
 info:
-  name: getByEmployeeId
+  name: getById
   type: http
   seq: 8
 
 http:
   method: GET
-  url: "{{baseUrl}}/employee/getByEmployeeId/f1eeb853-a7c8-467c-aeb1-8a11f1d5e18b"
+  url: "{{baseUrl}}/userDetails/getById/30b73ffa-7016-474d-a9a1-2bc03d572c4e"
   auth: inherit
 
 settings:

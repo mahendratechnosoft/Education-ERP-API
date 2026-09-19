@@ -1,11 +1,11 @@
 info:
-  name: getAllEmployees
+  name: getAllUserDetails
   type: http
   seq: 3
 
 http:
   method: put
-  url: "{{baseUrl}}/employee/getAllEmployees"
+  url: "{{baseUrl}}/userDetails/getAllUserDetails"
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJjMTY3YjFiYi0zZDU3LTRiNTgtYjNiZi1hNzNlNGVhODc0N2IiLCJzdWIiOiJjb21wYW55QGdtYWlsLmNvbSIsImlhdCI6MTc4NTg2Njk3MSwiZXhwIjoxNzg2MDQ2OTcxfQ.c-7PpUiYmUBxljzdZce1o6InVpzCywIXA3VVt1sQmrFk-ynE1MkArJaAReewFlIF_XFgMA1vAyQ-y5UQOzcarQ
@@ -22,8 +22,8 @@ http:
     type: json
     data: |-
       {
-        "search": "John",
-        "creatorIds":["bebe6ea5-d262-47e0-966e-c3a014bd05b9"],
+        "search": "",
+        "creatorIds":[],
        "from": "",
         "to": ""
       }

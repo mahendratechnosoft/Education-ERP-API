@@ -1,11 +1,11 @@
 info:
-  name: http://localhost:8080/employee/create
+  name: userDetails/create
   type: http
   seq: 1
 
 http:
   method: POST
-  url: "{{baseUrl}}/employee/create"
+  url: "{{baseUrl}}/userDetails/create"
   body:
     type: json
     data: |-
@@ -20,8 +20,10 @@ http:
         "department": "Engineering",
         "shiftTime": "09:00 AM - 06:00 PM",
         "gender": "Male",
+        "role": "ADMIN",
+        "profileImage": "image url",
         "hiredate": "2026-07-04",
-        "username": "emp98@gmail.com",
+        "username": "emp987@gmail.com",
         "password": "Emp@123"
       }
   auth: inherit
