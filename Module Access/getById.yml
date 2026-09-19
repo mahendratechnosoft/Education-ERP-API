@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{baseUrl}}/moduleAccess/getById/21507750-7615-4acd-b416-1cc89e4a281e"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

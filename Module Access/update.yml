@@ -1,0 +1,67 @@
+info:
+  name: update
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/moduleAccess/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "21507750-7615-4acd-b416-1cc89e4a281e",
+        "createdAt": "2026-09-19T12:54:44.7111558",
+        "updatedAt": "2026-09-19T12:54:44.7121528",
+        "createdBy": "Org@gmail.com",
+        "creatorId": "bebe6ea5-d262-47e0-966e-c3a014bd05b9",
+        "updatedBy": "Org@gmail.com",
+        "deleted": false,
+        "organizationId": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
+        "userId": "user-1234678",
+        "role": "ORGANIZATION_ADMIN",
+        "modules": {
+          "organization": {
+            "alternateName": "Organization Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "institute": {
+            "alternateName": "Institute Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "userCreation": {
+            "alternateName": "User Creation",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": true,
+            "canViewAll": true
+          },
+          "enquiry": {
+            "alternateName": "Enquiry Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": true,
+            "canViewAll": true,
+            "status": null,
+            "dropdowns": null
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

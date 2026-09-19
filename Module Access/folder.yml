@@ -1,7 +1,7 @@
 info:
-  name: Employee
+  name: Module Access
   type: folder
-  seq: 5
+  seq: 9
 
 request:
   auth: inherit

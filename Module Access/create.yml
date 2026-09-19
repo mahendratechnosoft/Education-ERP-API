@@ -1,0 +1,66 @@
+info:
+  name: create
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseUrl}}/moduleAccess/create"
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "user-1234678",
+        "role": "ORGANIZATION_ADMIN",
+        "modules": {
+          "organization": {
+            "alternateName": "Organization Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true,
+            "status": [
+              "kartik",
+              "NEW"
+            ],
+            "options": {
+              "export": true,
+              "import": false,
+              "bulkUpdate": true
+            }
+          },
+          "institute": {
+            "alternateName": "Institute Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "userCreation": {
+            "alternateName": "User Creation",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": true,
+            "canViewAll": true
+          },
+          "enquiry": {
+            "alternateName": "Enquiry Management",
+            "canView": true,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": true,
+            "canViewAll": true
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
