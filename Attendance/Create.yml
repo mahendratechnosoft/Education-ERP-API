@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "timeStamp": 1758432600004,
-        "userId": "a09c2fe9-02a4-438a-88fa-76153fb4c7e5"
+        "timeStamp": 1758432600571,
+        "userId": "99f56807-b68e-4089-a735-e0591252ec51"
       }
   auth: inherit
 
