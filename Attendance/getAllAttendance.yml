@@ -1,0 +1,26 @@
+info:
+  name: getAllAttendance
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/attendance/getAllAttendance"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "creatorIds":[],
+       "from": "",
+        "to": "",
+        "userIds":["32911219-43ea-4961-98d1-299ae23b71ab"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
