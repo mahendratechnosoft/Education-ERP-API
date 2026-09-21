@@ -1,0 +1,24 @@
+info:
+  name: update
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/attendance/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "2cbd6448-4855-4052-a6a4-ffc746f2d667",
+        "timeStamp": 1758432600004,
+        "checkIn": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

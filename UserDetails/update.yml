@@ -1,0 +1,44 @@
+info:
+  name: update
+  type: http
+  seq: 16
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/userDetails/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "c99608c6-b87a-422e-9f95-4202cceb324b",
+        "userId": "32911219-43ea-4961-98d1-299ae23b71ab",
+        "createdAt": "2026-09-21T18:35:23.4129603",
+        "updatedAt": "2026-09-21T18:35:23.4129603",
+        "createdBy": "Sinhgad",
+        "creatorId": "042ce847-3a82-4274-bf71-df6a46853c0f",
+        "updatedBy": "Sinhgad",
+        "deleted": false,
+        "organizationId": "0d6af7b7-9a33-4e81-9b31-69d49c583727",
+        "name": "John",
+        "work": "Software Engineer",
+        "email": "john.doe@example.com",
+        "phone": "9876543210",
+        "description": "Experienced Java Spring Boot developer with expertise in microservices and REST APIs.",
+        "department": "Engineering",
+        "shiftTime": "09:00 AM - 06:00 PM",
+        "gender": "Male",
+        "role": "ADMIN",
+        "profileImage": "image url",
+        "departmentId": null,
+        "roleId": "233",
+        "departmentId": "88784848484",
+        "hiredate": "2026-07-04"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
