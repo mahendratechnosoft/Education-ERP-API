@@ -1,0 +1,35 @@
+info:
+  name: update
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/actvityHistory/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "7653fe6b-6e72-4fdb-a06d-1f628967db3e",
+        "createdAt": "2026-09-21T10:47:53.9990104",
+        "updatedAt": "2026-09-21T10:47:53.9990104",
+        "createdBy": "Sinhgad",
+        "creatorId": "042ce847-3a82-4274-bf71-df6a46853c0f",
+        "updatedBy": "Sinhgad",
+        "deleted": false,
+        "organizationId": "0d6af7b7-9a33-4e81-9b31-69d49c583727",
+        "status": "CONTACTED",
+        "subStatus": "CALL_BACK",
+        "remark": "Student requested a callback tomorrow",
+        "priority": "HIGH",
+        "relatedTo": "PROGRAM",
+        "relatedToId": "program-uuid-123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

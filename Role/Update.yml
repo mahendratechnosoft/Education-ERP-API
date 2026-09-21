@@ -1,0 +1,68 @@
+info:
+  name: Update
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/role/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "9e084042-cbb8-409e-a397-a69298b63e3e",
+        "createdAt": "2026-09-21T14:01:39.8097155",
+        "updatedAt": "2026-09-21T14:01:39.8117101",
+        "createdBy": "Sinhgad",
+        "creatorId": "042ce847-3a82-4274-bf71-df6a46853c0f",
+        "updatedBy": "Sinhgad",
+        "deleted": false,
+        "organizationId": "0d6af7b7-9a33-4e81-9b31-69d49c583727",
+        "departmentId": "department-uuid-123",
+        "name": "Department Admin Permissions",
+        "active": true,
+        "modules": {
+          "organization": {
+            "alternateName": null,
+            "canView": false,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "institute": {
+            "alternateName": null,
+            "canView": false,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "userCreation": {
+            "alternateName": null,
+            "canView": false,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true
+          },
+          "enquiry": {
+            "alternateName": null,
+            "canView": false,
+            "canCreate": true,
+            "canEdit": true,
+            "canDelete": false,
+            "canViewAll": true,
+            "status": null,
+            "dropdowns": null
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

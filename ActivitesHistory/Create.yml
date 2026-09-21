@@ -1,0 +1,27 @@
+info:
+  name: Create
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{baseUrl}}/actvityHistory/create"
+  body:
+    type: json
+    data: |-
+      {
+        "status": "CONTACTED",
+        "subStatus": "CALL_BACK",
+        "remark": "Student requested a callback tomorrow",
+        "priority": "HIGH",
+        "relatedTo": "PROGRAM",
+        "relatedToId": "program-uuid-1234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

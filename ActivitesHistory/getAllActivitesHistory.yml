@@ -1,0 +1,27 @@
+info:
+  name: getAllActivitesHistory
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/actvityHistory/getAllActivitesHistory"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "creatorIds":[],
+       "from": "",
+        "to": "",
+      "relatedToIds":["program-uuid-1234"],
+      "relatedTos":["PROGRAM2","PROGRAM"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

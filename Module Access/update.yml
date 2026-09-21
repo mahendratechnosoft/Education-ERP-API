@@ -10,53 +10,53 @@ http:
     type: json
     data: |-
       {
-        "id": "21507750-7615-4acd-b416-1cc89e4a281e",
-        "createdAt": "2026-09-19T12:54:44.7111558",
-        "updatedAt": "2026-09-19T12:54:44.7121528",
-        "createdBy": "Org@gmail.com",
-        "creatorId": "bebe6ea5-d262-47e0-966e-c3a014bd05b9",
-        "updatedBy": "Org@gmail.com",
-        "deleted": false,
-        "organizationId": "7fb9c2dd-ca58-4227-9eb7-5dd47a00fdd7",
-        "userId": "user-1234678",
-        "role": "ORGANIZATION_ADMIN",
-        "modules": {
-          "organization": {
-            "alternateName": "Organization Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": false,
-            "canViewAll": true
-          },
-          "institute": {
-            "alternateName": "Institute Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": false,
-            "canViewAll": true
-          },
-          "userCreation": {
-            "alternateName": "User Creation",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": true,
-            "canViewAll": true
-          },
-          "enquiry": {
-            "alternateName": "Enquiry Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": true,
-            "canViewAll": true,
-            "status": null,
-            "dropdowns": null
+          "id": "0cafa007-0e73-4c40-9e00-9f99fccfc087",
+          "createdAt": "2026-09-19T17:35:45.794376",
+          "updatedAt": "2026-09-19T17:35:45.800357",
+          "createdBy": "KartikNEW",
+          "creatorId": "b464ecec-83bc-47df-94f4-6b91cd50c243",
+          "updatedBy": "KartikNEW",
+          "deleted": false,
+          "organizationId": "b9e33a6a-ef38-4c0e-adbd-a026245ee34f",
+          "userId": "b464ecec-83bc-47df-94f4-6b91cd50c243",
+          "role": "SUPER_ADMIN",
+          "modules": {
+            "organization": {
+              "alternateName": "Organization",
+              "canView": false,
+              "canCreate": false,
+              "canEdit": false,
+              "canDelete": false,
+              "canViewAll": false
+            },
+            "institute": {
+              "alternateName": "Institute",
+              "canView": true,
+              "canCreate": true,
+              "canEdit": true,
+              "canDelete": true,
+              "canViewAll": true
+            },
+            "userCreation": {
+              "alternateName": "User",
+              "canView": true,
+              "canCreate": true,
+              "canEdit": true,
+              "canDelete": true,
+              "canViewAll": true
+            },
+            "enquiry": {
+              "alternateName": "Enquiry",
+              "canView": true,
+              "canCreate": true,
+              "canEdit": true,
+              "canDelete": true,
+              "canViewAll": true,
+              "status": null,
+              "dropdowns": null
+            }
           }
         }
-      }
   auth: inherit
 
 settings:

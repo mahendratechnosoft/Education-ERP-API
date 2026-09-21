@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{baseUrl}}/role/getById/81ab440d-5b27-4c60-a9cc-a55b325778ab"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

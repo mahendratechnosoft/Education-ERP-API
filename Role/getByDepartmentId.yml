@@ -1,0 +1,16 @@
+info:
+  name: getByDepartmentId
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{baseUrl}}/role/getByDepartmentId/1455"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,31 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/department/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "9ca12bca-2094-4118-97c3-63dff20f4668",
+        "createdAt": "2026-09-21T13:05:15.1818796",
+        "updatedAt": "2026-09-21T13:05:15.1818796",
+        "createdBy": "Sinhgad",
+        "creatorId": "042ce847-3a82-4274-bf71-df6a46853c0f",
+        "updatedBy": "Sinhgad",
+        "deleted": false,
+        "organizationId": "0d6af7b7-9a33-4e81-9b31-69d49c583727",
+        "name": "java",
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

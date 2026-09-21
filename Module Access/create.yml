@@ -10,24 +10,24 @@ http:
     type: json
     data: |-
       {
-        "userId": "user-1234678",
+        "userId": "042ce847-3a82-4274-bf71-df6a46853c0f",
         "role": "ORGANIZATION_ADMIN",
         "modules": {
           "organization": {
             "alternateName": "Organization Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
+            "canView": false,
+            "canCreate": false,
+            "canEdit": false,
             "canDelete": false,
-            "canViewAll": true,
+            "canViewAll": false,
             "status": [
               "kartik",
               "NEW"
             ],
             "options": {
-              "export": true,
+              "export": false,
               "import": false,
-              "bulkUpdate": true
+              "bulkUpdate": false
             }
           },
           "institute": {
@@ -35,7 +35,7 @@ http:
             "canView": true,
             "canCreate": true,
             "canEdit": true,
-            "canDelete": false,
+            "canDelete": true,
             "canViewAll": true
           },
           "userCreation": {

@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{baseUrl}}/actvityHistory/getById/7653fe6b-6e72-4fdb-a06d-1f628967db3e"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
