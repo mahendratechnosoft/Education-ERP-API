@@ -1,0 +1,35 @@
+info:
+  name: Create
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: "{{baseUrl}}/feeStrcture/create"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "INST-001",
+        "insituteName": "ABC College of Engineering",
+        "courseId": "COURSE-001",
+        "courseName": "Computer Engineering",
+        "programId": "PROGRAM-001",
+        "programName": "Bachelor of Engineering",
+        "title": "BE Computer Engineering - 2026",
+        "tutionFee": 85000.00,
+        "developmentFee": 15000.00,
+        "otherFee": 5000.00,
+        "insuranceCharges": 2000.00,
+        "academicStartDate": "2026-07-01T00:00:00",
+        "academicEndDate": "2030-06-30T23:59:59",
+        "remark": "Fee structure applicable for the 2026-2030 academic batch."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

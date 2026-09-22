@@ -1,7 +1,7 @@
 info:
-  name: Attendance
+  name: FeeStrcture
   type: folder
-  seq: 13
+  seq: 17
 
 request:
   auth: inherit

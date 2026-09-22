@@ -1,7 +1,7 @@
 info:
-  name: Attendance
+  name: Program
   type: folder
-  seq: 13
+  seq: 15
 
 request:
   auth: inherit

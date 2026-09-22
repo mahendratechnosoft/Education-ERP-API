@@ -1,0 +1,26 @@
+info:
+  name: getAllCourse
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/course/getAllCourse"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+       "from": "",
+        "to": "",
+       "creatorIds":[],
+      "instituteIds":[]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

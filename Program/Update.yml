@@ -1,0 +1,37 @@
+info:
+  name: Update
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/program/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "903db2c8-680e-4a41-a933-491363fc4820",
+        "createdAt": "2026-09-22T11:42:48.0464105",
+        "updatedAt": "2026-09-22T11:42:48.0464105",
+        "createdBy": "DYPATIL",
+        "creatorId": "8009246d-49a0-499a-9a46-90c90eeb0eff",
+        "updatedBy": "DYPATIL",
+        "deleted": false,
+        "organizationId": "7ee7cdcc-715e-45fd-9897-1d8b3ed0143e",
+        "programName": "Bachelor of Engineeringq Reee",
+        "programCode": "BE",
+        "shortName": "B.E.",
+        "programType": "Undergraduate",
+        "duration": "4 Years",
+        "instituteId": "YOUR_INSTITUTE_ID",
+        "description": "Bachelor of Engineering program offered by the institute.",
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

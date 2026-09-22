@@ -1,0 +1,29 @@
+info:
+  name: Create
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{baseUrl}}/program/create"
+  body:
+    type: json
+    data: |-
+      {
+        "programName": "Bachelor of ART",
+        "programCode": "BA",
+        "shortName": "B.S.",
+        "programType": "Undergraduate",
+        "duration": "2 Years",
+        "instituteId": "125",
+        "description": "Bachelor of Engineering program offered by the institute.",
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

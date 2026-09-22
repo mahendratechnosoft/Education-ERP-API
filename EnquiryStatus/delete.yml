@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/enquiryStatus/delete/003fb035-8663-432d-9aaa-8720ac358c79"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

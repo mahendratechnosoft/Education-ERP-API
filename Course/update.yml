@@ -1,0 +1,30 @@
+info:
+  name: update
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/course/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "5ed2851b-54c5-46b0-bfa4-4644dc1df40a",
+        "programId": "365956f5-de2c-4aca-8cf9-3ea1ae909cec",
+        "courseName": "Computer Engineering",
+        "courseCode": "COMP",
+        "shortName": "Computer",
+        "courseType": "Engineering",
+        "duration": "4 Years",
+        "description": "Bachelor of Engineering course in Computer Engineering.",
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
