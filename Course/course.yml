@@ -1,0 +1,16 @@
+info:
+  name: course
+  type: http
+  seq: 19
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/course/delete/770fe98f-e27c-4ac3-8fd1-fbf1d579d701"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

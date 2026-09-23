@@ -8,7 +8,16 @@ http:
   url: "{{baseUrl}}/feeStrcture/getAllFeeStructure"
   body:
     type: json
-    data: "{}"
+    data: |-
+      {
+        "search": "",
+        "from": "",
+        "to": "",
+        "creatorIds": [],
+        "instituteIds": [],
+        "courseIds": [],
+        "programIds": []
+      }
   auth: inherit
 
 settings:
