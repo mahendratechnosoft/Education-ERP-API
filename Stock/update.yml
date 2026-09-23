@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/stock/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "ab7a9b2b-2cf9-40a4-9661-eec7ee590058",
+        "itemId": "c0e10eac-bc15-4370-b3fb-ade9c4b22c66",
+        "serialNumber": "SN-987654321",
+        "quantity": 50,
+        "purchasePrice": 45000.50,
+        "purchaseDate": "2026-09-20",
+        "expiryDate": "2030-09-20",
+        "warrantyMonth": 12,
+        "warrantyExpiryDate": "2027-09-20",
+        "rack": "Rack-A",
+        "subRack": "Shelf-2"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

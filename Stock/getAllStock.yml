@@ -1,0 +1,27 @@
+info:
+  name: getAllStock
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/stock/getAllStock"
+  body:
+    type: json
+    data: |
+      {
+      //   "search": "Rack-A",
+      //   "creatorIds": [
+      //     "REPLACE_WITH_CREATOR_ID_1"
+      //   ],
+      //   "from": "2026-09-01T00:00:00",
+      //   "to": "2026-10-01T23:59:59"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

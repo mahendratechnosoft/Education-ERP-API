@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/item/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "1deb8bc4-b664-407e-b48a-3720cdfe7aaa",
+        "name": "Dell Inspiron 15",
+        "category": "Electronics",
+        "sku": "DELL-INS-15-001",
+        "unit": "PCS",
+        "brand": "Dell",
+        "modelNumber": "Inspiron 3512",
+        "minQty": 5,
+        "image": "https://example.com/images/dell-inspiron-15.jpg",
+        "hsn": "84713010",
+        "type": "SERIALIZE"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

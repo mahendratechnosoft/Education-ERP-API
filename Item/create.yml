@@ -1,0 +1,31 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/item/create"
+  body:
+    type: json
+    data: |
+      {
+        "name": "Book",
+        "category": "Stagtionary",
+        "sku": "Stagtionary-INS-15-001",
+        "unit": "BOX",
+        "brand": "Dell",
+        "modelNumber": "",
+        "minQty": 5,
+        "image": "https://example.com/images/dell-inspiron-15.jpg",
+        "hsn": "84713010",
+        "type": "NON_SERIALIZE"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

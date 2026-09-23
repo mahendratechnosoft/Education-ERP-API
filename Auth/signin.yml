@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-        "username": "DummyOrg",
-        "password": "DummyOrg"
+        "username": "RiteshOrg",
+        "password": "Pass@123"
       }  
 
 runtime:
