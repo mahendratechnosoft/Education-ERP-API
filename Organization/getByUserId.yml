@@ -1,11 +1,11 @@
 info:
-  name: getById
+  name: getByUserId
   type: http
-  seq: 8
+  seq: 4
 
 http:
   method: GET
-  url: "{{baseUrl}}/userDetails/getById/1615f774-76c3-42b9-80d1-52bcb299abb7"
+  url: "{{baseUrl}}/organization/getByUserId/cd17f10c-6b8c-459f-882e-f2c564020970"
   auth: inherit
 
 settings:

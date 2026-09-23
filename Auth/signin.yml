@@ -13,9 +13,9 @@ http:
     type: json
     data: |-
       {
-        "username": "DYPATIL",
-        "password": "DYPATIL"
-      }
+        "username": "DummyOrg",
+        "password": "DummyOrg"
+      }  
 
 runtime:
   scripts:
