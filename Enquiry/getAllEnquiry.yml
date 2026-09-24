@@ -17,9 +17,10 @@ http:
     type: json
     data: |-
       {
+        "instituteId": "",
         "search": "",
-        "creatorIds":[],
-       "from": "",
+        "creatorIds": [],
+        "from": "",
         "to": ""
       }
   auth: inherit

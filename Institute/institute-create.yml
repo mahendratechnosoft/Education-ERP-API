@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "instituteName": "ABC Engineering College",
+        "instituteName": "ABC Engineering College2",
         "shortName": "ABCEC",
         "instituteCode": "ABC-ENG-001",
         "instituteType": "COLLEGE",

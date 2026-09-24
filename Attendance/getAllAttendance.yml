@@ -10,11 +10,12 @@ http:
     type: json
     data: |-
       {
+        "instituteId": "b2487d1a-3a7b-4358-9a93-80544fc7a83e",
         "search": "",
-        "creatorIds":[],
-       "from": "",
+        "creatorIds": [],
+        "from": "",
         "to": "",
-        "userIds":["32911219-43ea-4961-98d1-299ae23b71ab"]
+        "userIds": []
       }
   auth: inherit
 

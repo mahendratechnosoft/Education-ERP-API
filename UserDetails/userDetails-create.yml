@@ -23,7 +23,7 @@ http:
         "role": "ADMIN",
         "profileImage": "image url",
         "hiredate": "2026-07-04",
-        "username": "testuser5",
+        "username": "testuser88",
         "password": "Emp@123"
       }
   auth: inherit

@@ -10,12 +10,11 @@ http:
     type: json
     data: |-
       {
-        "programName": "Bachelor of ART",
+        "programName": "Bachelor of ART 2",
         "programCode": "BA",
         "shortName": "B.S.",
         "programType": "Undergraduate",
         "duration": "2 Years",
-        "instituteId": "125",
         "description": "Bachelor of Engineering program offered by the institute.",
         "active": true
       }

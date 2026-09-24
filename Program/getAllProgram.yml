@@ -10,11 +10,12 @@ http:
     type: json
     data: |-
       {
+      "instituteId": "",
         "search": "",
        "from": "",
         "to": "",
-       "creatorIds":[],
-      "instituteIds":[]
+       "creatorIds":[]
+
       }
   auth: inherit
 

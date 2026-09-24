@@ -14,7 +14,7 @@ http:
         "from": "",
         "to": "",
         "creatorIds": [],
-        "instituteIds": [],
+        "instituteId": "",
         "courseIds": [],
         "programIds": []
       }
