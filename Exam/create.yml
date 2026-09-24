@@ -1,0 +1,37 @@
+info:
+  name: create
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: "{{baseUrl}}/exam/create"
+  body:
+    type: json
+    data: |-
+      {
+        "examName": "Mid Term Examination",
+        "examCode": "MID-TERM-2026",
+        "examType": "MID_TERM",
+        "academicYear": 2026,
+        "semester": 3,
+        "courseId": "course-123",
+        "courseName": "B.Tech Computer Science",
+        "subjectId": "subject-456",
+        "subjectName": "Data Structures",
+        "examDate": "2026-10-15T00:00:00",
+        "startTime": "10:00:00",
+        "endTime": "13:00:00",
+        "totalMarks": 100,
+        "passingMarks": 40,
+        "status": "SCHEDULED",
+        "remark": "Mid-term examination for Semester 3 students."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
