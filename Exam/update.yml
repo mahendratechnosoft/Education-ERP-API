@@ -1,0 +1,45 @@
+info:
+  name: update
+  type: http
+  seq: 19
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/exam/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "97998732-0632-478e-8959-cf1d0e134c9c",
+        "createdAt": "2026-09-24T10:30:39.6529128",
+        "updatedAt": "2026-09-24T10:30:39.6529128",
+        "createdBy": "DummyOrg",
+        "creatorId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+        "updatedBy": "DummyOrg",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "examName": "Mid Term Examination",
+        "examCode": "MID-TERM-2026",
+        "examType": "MID_TERM",
+        "academicYear": 2026,
+        "semester": 3,
+        "courseId": "course-123",
+        "courseName": "B.Tech Computer Science",
+        "subjectId": "subject-456",
+        "subjectName": "Data Structures",
+        "examDate": "2026-10-15T00:00:00",
+        "startTime": "10:00:00",
+        "endTime": "13:00:00",
+        "totalMarks": 100,
+        "passingMarks": 40,
+        "status": "SCHEDULED",
+        "remark": "Mid-term examination for Semester 3 students."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
