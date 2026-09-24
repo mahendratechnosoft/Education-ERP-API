@@ -1,0 +1,29 @@
+info:
+  name: getAllResult
+  type: http
+  seq: 22
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/result/getAllResult"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "from": "",
+        "to": "",
+        "creatorIds": [],
+        "studentIds": [],
+        "subjectIds": [],
+        "programIds": [],
+        "programIds": []
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

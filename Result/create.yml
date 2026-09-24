@@ -1,0 +1,43 @@
+info:
+  name: create
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: "{{baseUrl}}/result/create"
+  body:
+    type: json
+    data: |-
+      {
+        "studentId": "student-1233",
+        "studentName": "Rahul Sharma",
+        "examId": "exam-456",
+        "examName": "Mid Term Examination",
+        "examCode": "MID-TERM-2026",
+        "courseId": "course-101",
+        "courseName": "B.Tech Computer Science",
+        "programId": "program-10",
+        "programName": "B.Tech",
+        "subjectId": "subject-20",
+        "subjectName": "Data Structures",
+        "academicYear": 2026,
+        "semester": 3,
+        "maxMarks": 100,
+        "obtainedMarks": 78,
+        "passingMarks": 40,
+        "percentage": 78.0,
+        "grade": "A",
+        "gradePoint": 8.0,
+        "resultStatus": "PASS",
+        "resultDate": "2026-10-20T15:30:00",
+        "remarks": "Good performance in the examination."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

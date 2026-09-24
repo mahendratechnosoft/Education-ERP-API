@@ -1,0 +1,51 @@
+info:
+  name: update
+  type: http
+  seq: 22
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/result/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "46ce8656-58ee-4149-a2bf-a8729cb67db1",
+        "createdAt": "2026-09-24T12:58:18.6257838",
+        "updatedAt": "2026-09-24T12:58:18.6257838",
+        "createdBy": "DummyOrg",
+        "creatorId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+        "updatedBy": "DummyOrg",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "studentId": "student-1233",
+        "studentName": "Rahul Sharma",
+        "examId": "exam-456",
+        "examName": "Mid Term Examination",
+        "examCode": "MID-TERM-2026",
+        "courseId": "course-101",
+        "courseName": "B.Tech Computer Science",
+        "programId": "program-10",
+        "programName": "B.Tech",
+        "subjectId": "subject-20",
+        "subjectName": "Data Structures",
+        "academicYear": 2026,
+        "semester": 3,
+        "maxMarks": 100,
+        "obtainedMarks": 78,
+        "passingMarks": 40,
+        "percentage": 78.0,
+        "grade": "A",
+        "gradePoint": 8.0,
+        "resultStatus": "PASS",
+        "resultDate": "2026-10-20T15:30:00",
+        "remarks": "Good performance in the examination."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
