@@ -11,6 +11,10 @@ http:
       value: a8de9019-d738-41f1-a16a-87a086f688aa
       type: query
       disabled: true
+    - name: instituteId
+      value: 5455e2db-b885-4c2a-b395-193087cdd6c9
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

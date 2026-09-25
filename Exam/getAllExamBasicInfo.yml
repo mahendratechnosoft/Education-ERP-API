@@ -5,9 +5,12 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/exam/getAllExamBasicInfo?subjectId="
+  url: "{{baseUrl}}/exam/getAllExamBasicInfo?subjectId=&instituteId="
   params:
     - name: subjectId
+      value: ""
+      type: query
+    - name: instituteId
       value: ""
       type: query
   auth: inherit

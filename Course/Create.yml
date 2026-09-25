@@ -10,15 +10,12 @@ http:
     type: json
     data: |-
       {
-        
         "programId": "a3e8cb6e-1203-4bc3-a2f2-f9032f4599ff",
-        
         "courseName": "Computer Engineering 2",
         "courseCode": "COMP",
         "shortName": "Computer",
         "courseType": "Engineering",
         "duration": "3 Years",
-        
         "description": "Bachelor of Engineering course in Computer Engineering.",
         "active": true
       }

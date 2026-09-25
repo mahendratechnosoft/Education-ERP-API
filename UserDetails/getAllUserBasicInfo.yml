@@ -9,6 +9,15 @@ http:
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJjMTY3YjFiYi0zZDU3LTRiNTgtYjNiZi1hNzNlNGVhODc0N2IiLCJzdWIiOiJjb21wYW55QGdtYWlsLmNvbSIsImlhdCI6MTc4NTg2Njk3MSwiZXhwIjoxNzg2MDQ2OTcxfQ.c-7PpUiYmUBxljzdZce1o6InVpzCywIXA3VVt1sQmrFk-ynE1MkArJaAReewFlIF_XFgMA1vAyQ-y5UQOzcarQ
+  params:
+    - name: role
+      value: ADMIN 2
+      type: query
+      disabled: true
+    - name: instituteId
+      value: 5455e2db-b885-4c2a-b395-193087cdd6c9
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

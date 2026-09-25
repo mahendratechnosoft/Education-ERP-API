@@ -5,7 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/subject/getAllSubjectBasicInfo"
+  url: "{{baseUrl}}/subject/getAllSubjectBasicInfo?instituteId="
+  params:
+    - name: instituteId
+      value: ""
+      type: query
   auth: inherit
 
 settings:
