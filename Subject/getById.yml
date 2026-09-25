@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 23
+
+http:
+  method: GET
+  url: "{{baseUrl}}/subject/getById/151562e3-a5f7-47db-bcc3-0abd258eb778"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

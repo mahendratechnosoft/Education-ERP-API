@@ -1,0 +1,47 @@
+info:
+  name: update
+  type: http
+  seq: 23
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/subject/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "151562e3-a5f7-47db-bcc3-0abd258eb778",
+        "createdAt": "2026-09-25T09:41:24.9359326",
+        "updatedAt": "2026-09-25T09:41:24.9359326",
+        "createdBy": "RiteshOrg",
+        "creatorId": "1a23d92e-d692-471f-80e5-530302118a3d",
+        "updatedBy": "RiteshOrg",
+        "deleted": false,
+        "organizationId": "5b6dfcaf-50f2-4bcf-b66e-1dbc1a173a2d",
+        "instituteId": null,
+        "instituteName": null,
+        "subjectName": "Data Structures and Algorithms",
+        "subjectCode": "CSE201",
+        "courseId": "course-uuid-here",
+        "subjectType": "THEORY",
+        "category": "CORE",
+        "credits": 4,
+        "semester": 3,
+        "theoryHours": 3,
+        "practicalHours": 2,
+        "tutorialHours": 0,
+        "internalMarks": 30,
+        "externalMarks": 70,
+        "totalMarks": 100,
+        "passingMarks": 40,
+        "active": true,
+        "remark": "Core subject for Computer Science students"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

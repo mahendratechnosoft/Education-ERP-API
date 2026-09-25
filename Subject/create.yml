@@ -1,0 +1,37 @@
+info:
+  name: create
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: "{{baseUrl}}/subject/create"
+  body:
+    type: json
+    data: |-
+      {
+        "subjectName": "Data Structures and Algorithms",
+        "subjectCode": "CSE201",
+        "courseId": "course-uuid-here",
+        "subjectType": "THEORY",
+        "category": "CORE",
+        "credits": 4,
+        "semester": 3,
+        "theoryHours": 3,
+        "practicalHours": 2,
+        "tutorialHours": 0,
+        "internalMarks": 30,
+        "externalMarks": 70,
+        "totalMarks": 100,
+        "passingMarks": 40,
+        "active": true,
+        "remark": "Core subject for Computer Science students"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
