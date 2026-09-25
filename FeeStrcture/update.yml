@@ -10,28 +10,68 @@ http:
     type: json
     data: |-
       {
-        "id": "770fe98f-e27c-4ac3-8fd1-fbf1d579d701",
-        "createdAt": "2026-09-22T15:40:59.3345789",
-        "updatedAt": "2026-09-22T15:40:59.3345789",
-        "createdBy": "DYPATIL",
-        "creatorId": "8009246d-49a0-499a-9a46-90c90eeb0eff",
-        "updatedBy": "DYPATIL",
+        "id": "d58520f3-e1f3-4523-ae05-0173c5c71282",
+        "createdAt": "2026-09-25T13:56:21.7287976",
+        "updatedAt": "2026-09-25T13:56:21.7287976",
+        "createdBy": "INST201",
+        "creatorId": "ee38af99-b77b-4eb4-8db7-59c26242619d",
+        "updatedBy": "INST201",
         "deleted": false,
-        "organizationId": "7ee7cdcc-715e-45fd-9897-1d8b3ed0143e",
-        "instituteId": "INST-001",
-        "insituteName": "ABC College of Engineering",
-        "courseId": "COURSE-001",
-        "courseName": "Computer Engineering",
-        "programId": "PROGRAM-001",
-        "programName": "Bachelor of Engineering",
-        "title": "BE Computer Engineering - 2026",
-        "tutionFee": 85000.0,
-        "developmentFee": 15000.0,
-        "otherFee": 5000.0,
-        "insuranceCharges": 2000.0,
+        "organizationId": "753f254b-5298-43aa-863a-1faac05f87d0",
+        "instituteId": "5455e2db-b885-4c2a-b395-193087cdd6c9",
+        "instituteName": null,
+        "courseId": "course-123",
+        "courseName": "B.Tech Computer Science",
+        "programId": "program-101",
+        "programName": "Engineering",
+        "title": "B.Tech Fee Structure 2026-27",
         "academicStartDate": "2026-07-01T00:00:00",
-        "academicEndDate": "2030-06-30T23:59:59",
-        "remark": "Fee structure applicable for the 2026-2030 academic batch."
+        "academicEndDate": "2027-06-30T23:59:59",
+        "remark": "Fee structure for academic year 2026-27",
+        "categoryWiseFees": [
+          {
+            "category": "GENERAL",
+            "tuitionFee": 80000.00,
+            "developmentFee": 10000.00,
+            "otherFee": 5000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "OBC",
+            "tuitionFee": 60000.00,
+            "developmentFee": 8000.00,
+            "otherFee": 5000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "SC",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "ST",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "NEW",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "NEW2",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          }
+        ]
       }
   auth: inherit
 
