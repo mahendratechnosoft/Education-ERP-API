@@ -45,31 +45,10 @@ http:
           },
           {
             "category": "SC",
-            "tuitionFee": 30000.00,
+            "tuitionFee": 80000.00,
             "developmentFee": 5000.00,
             "otherFee": 3000.00,
-            "insuranceCharges": 1000.00
-          },
-          {
-            "category": "ST",
-            "tuitionFee": 30000.00,
-            "developmentFee": 5000.00,
-            "otherFee": 3000.00,
-            "insuranceCharges": 1000.00
-          },
-          {
-            "category": "NEW",
-            "tuitionFee": 30000.00,
-            "developmentFee": 5000.00,
-            "otherFee": 3000.00,
-            "insuranceCharges": 1000.00
-          },
-          {
-            "category": "NEW2",
-            "tuitionFee": 30000.00,
-            "developmentFee": 5000.00,
-            "otherFee": 3000.00,
-            "insuranceCharges": 1000.00
+            "insuranceCharges": 9000.00
           }
         ]
       }

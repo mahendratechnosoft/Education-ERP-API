@@ -10,20 +10,51 @@ http:
     type: json
     data: |-
       {
-        "instituteId": "INST-001",
-        "insituteName": "ABC College of Engineering",
-        "courseId": "COURSE-001",
-        "courseName": "Computer Engineering",
-        "programId": "PROGRAM-001",
-        "programName": "Bachelor of Engineering",
-        "title": "BE Computer Engineering - 2026",
-        "tutionFee": 85000.00,
-        "developmentFee": 15000.00,
-        "otherFee": 5000.00,
-        "insuranceCharges": 2000.00,
+        "courseId": "course-123",
+        "courseName": "B.Tech Computer Science",
+        "programId": "program-101",
+        "programName": "Engineering",
+        "title": "B.Tech Fee Structure 2026-27",
         "academicStartDate": "2026-07-01T00:00:00",
-        "academicEndDate": "2030-06-30T23:59:59",
-        "remark": "Fee structure applicable for the 2026-2030 academic batch."
+        "academicEndDate": "2027-06-30T23:59:59",
+        "remark": "Fee structure for academic year 2026-27",
+        "categoryWiseFees": [
+          {
+            "category": "GENERAL",
+            "tuitionFee": 80000.00,
+            "developmentFee": 10000.00,
+            "otherFee": 5000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "OBC",
+            "tuitionFee": 60000.00,
+            "developmentFee": 8000.00,
+            "otherFee": 5000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "SC",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          },
+          {
+            "category": "ST",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          },
+      {
+            "category": "NEW",
+            "tuitionFee": 30000.00,
+            "developmentFee": 5000.00,
+            "otherFee": 3000.00,
+            "insuranceCharges": 1000.00
+          }
+        ]
       }
   auth: inherit
 
