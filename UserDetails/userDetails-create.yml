@@ -10,21 +10,43 @@ http:
     type: json
     data: |-
       {
-        "name": "John",
-        "secondName": "Doe",
-        "work": "Software Engineer",
-        "email": "john.doe@example.com",
-        "phone": "9876543210",
-        "image": "https://example.com/images/john.jpg",
-        "description": "Experienced Java Spring Boot developer with expertise in microservices and REST APIs.",
-        "department": "Engineering",
-        "shiftTime": "09:00 AM - 06:00 PM",
+        "id": "user-details-001",
+        "userId": "user-001",
+
+        "fullName": "Rahul Kumar Sharma",
+        "firstName": "Rahul",
+        "middleName": "Kumar",
+        "lastName": "Sharma",
+
+        "dateOfBirth": "1995-05-15",
         "gender": "Male",
-        "role": "ADMIN",
-        "profileImage": "image url",
-        "hiredate": "2026-07-04",
-        "username": "testuser88",
-        "password": "Emp@123"
+        "bloodGroup": "B+",
+        "nationality": "Indian",
+        "religion": "Hindu",
+        "category": "General",
+
+        "email": "rahul.sharma@example.com",
+        "phone": "9876543210",
+
+        "work": "Teaching",
+        "department": "Computer Engineering",
+        "departmentId": "dept-ce-001",
+        "shiftTime": "09:00 AM - 05:00 PM",
+        "hireDate": "2024-06-10",
+        "role": "FACULTY",
+        "roleId": "role-faculty-001",
+
+        "profileImage": "https://example.com/profile/rahul-sharma.jpg",
+        "description": "Faculty member in the Computer Engineering department with experience in teaching and academic activities.",
+
+        "address": "123 College Road, Shivaji Nagar",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "pincode": "411005",
+
+        "instituteId": "inst-001",
+        "instituteName": "ABC Institute of Technology"
       }
   auth: inherit
 
