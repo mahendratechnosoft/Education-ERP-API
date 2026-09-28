@@ -8,10 +8,10 @@ http:
   url: "{{baseUrl}}/stock/update"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "id": "ab7a9b2b-2cf9-40a4-9661-eec7ee590058",
-        "itemId": "c0e10eac-bc15-4370-b3fb-ade9c4b22c66",
+         "id": "b8ff96c4-92b6-4b49-a845-ca9e519e0ff9",
+        "itemId": "01df2b3c-6e2e-4f95-9704-874922bd7458",
         "serialNumber": "SN-987654321",
         "quantity": 50,
         "purchasePrice": 45000.50,

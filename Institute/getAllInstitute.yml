@@ -1,5 +1,5 @@
 info:
-  name: institute/getAllOrganization
+  name: getAllInstitute
   type: http
   seq: 6
 

@@ -1,11 +1,11 @@
 info:
-  name: "{{baseUrl}}/stock/delete/{id}"
+  name: delete
   type: http
   seq: 5
 
 http:
   method: DELETE
-  url: "{{baseUrl}}/stock/delete/ab7a9b2b-2cf9-40a4-9661-eec7ee590058"
+  url: "{{baseUrl}}/stock/delete/a6b7ad44-5f91-499f-ac56-d5d24dba5387"
   auth: inherit
 
 settings:

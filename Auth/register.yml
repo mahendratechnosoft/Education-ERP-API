@@ -10,11 +10,9 @@ http:
     type: json
     data: |-
       {
-          "username": "root",
-          "password": "1234"
-
+          "username": "super",
+          "password": "Pass@123"
       }
-  auth: inherit
 
 settings:
   encodeUrl: true

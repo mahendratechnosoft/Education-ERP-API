@@ -10,16 +10,16 @@ http:
     type: json
     data: |
       {
-        "name": "Book",
-        "category": "Stagtionary",
-        "sku": "Stagtionary-INS-15-001",
+        "name": "Laptop",
+        "category": "Electronic",
+        "sku": "Laptop-INS-15-001",
         "unit": "BOX",
         "brand": "Dell",
         "modelNumber": "",
         "minQty": 5,
         "image": "https://example.com/images/dell-inspiron-15.jpg",
         "hsn": "84713010",
-        "type": "NON_SERIALIZE"
+        "type": "SERIALIZE"
       }
   auth: inherit
 

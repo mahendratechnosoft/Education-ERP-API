@@ -10,51 +10,156 @@ http:
     type: json
     data: |-
       {
-        "userId": "042ce847-3a82-4274-bf71-df6a46853c0f",
-        "role": "ORGANIZATION_ADMIN",
-        "modules": {
-          "organization": {
-            "alternateName": "Organization Management",
-            "canView": false,
-            "canCreate": false,
-            "canEdit": false,
-            "canDelete": false,
-            "canViewAll": false,
-            "status": [
-              "kartik",
-              "NEW"
-            ],
-            "options": {
-              "export": false,
-              "import": false,
-              "bulkUpdate": false
-            }
-          },
-          "institute": {
-            "alternateName": "Institute Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": true,
-            "canViewAll": true
-          },
-          "userCreation": {
-            "alternateName": "User Creation",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": true,
-            "canViewAll": true
-          },
-          "enquiry": {
-            "alternateName": "Enquiry Management",
-            "canView": true,
-            "canCreate": true,
-            "canEdit": true,
-            "canDelete": true,
-            "canViewAll": true
+        "createdAt": "2026-09-28T10:38:21.719612",
+        "updatedAt": "2026-09-28T10:38:21.756298",
+        "createdBy": "super",
+        "creatorId": "ee47d1d7-5960-45f2-be3b-e1c1251513a6",
+        "updatedBy": "super",
+        "deleted": false,
+        "organizationId": null,
+        "instituteId": null,
+        "instituteName": null,
+        "userId": "a8efdb19-b398-4645-bc2b-9af4518072ba",
+        "role": "SUPER_ADMIN",
+       "modules": {
+              "dashboard": {
+                  "sequence": 0,
+                  "alternateName": "Dashboard",
+                  "canView": false
+              },
+              "organization": {
+                  "sequence": 0,
+                  "alternateName": "Organization",
+                  "canView": true,
+                  "canCreate": true,
+                  "canEdit": true,
+                  "canDelete": true,
+                  "canViewAll": true
+              },
+              "institute": {
+                  "sequence": 0,
+                  "alternateName": "Institute ",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "userCreation": {
+                  "sequence": 0,
+                  "alternateName": "User ",
+                  "canView": true,
+                  "canCreate": true,
+                  "canEdit": true,
+                  "canDelete": true,
+                  "canViewAll": true
+              },
+              "enquiry": {
+                  "sequence": 0,
+                  "alternateName": "Enquiry ",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false,
+                  "status": null,
+                  "dropdowns": null
+              },
+              "setting": {
+                  "sequence": 0,
+                  "alternateName": "Settings",
+                  "canView": true,
+                  "canCreate": true,
+                  "canEdit": true,
+                  "canDelete": true,
+                  "canViewAll": true
+              },
+              "timeSheet": {
+                  "sequence": 0,
+                  "alternateName": "Attendance ",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false,
+                  "dropdowns": {
+                      "Dashboard": false,
+                      "timesheet": false
+                  }
+              },
+              "program": {
+                  "sequence": 0,
+                  "alternateName": "Program ",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "course": {
+                  "sequence": 0,
+                  "alternateName": "Course ",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "feeStructure": {
+                  "sequence": 0,
+                  "alternateName": "Fee Structure",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "subject": {
+                  "sequence": 0,
+                  "alternateName": "Subject",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "item": {
+                  "sequence": 0,
+                  "alternateName": "Item",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "stock": {
+                  "sequence": 0,
+                  "alternateName": "Stock",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "exam": {
+                  "sequence": 0,
+                  "alternateName": "Exam",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              },
+              "result": {
+                  "sequence": 0,
+                  "alternateName": "Result",
+                  "canView": false,
+                  "canCreate": false,
+                  "canEdit": false,
+                  "canDelete": false,
+                  "canViewAll": false
+              }
           }
-        }
       }
   auth: inherit
 
