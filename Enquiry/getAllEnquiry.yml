@@ -21,7 +21,8 @@ http:
         "search": "",
         "creatorIds": [],
         "from": "",
-        "to": ""
+        "to": "",
+        "statuses":["6"]
       }
   auth: inherit
 
