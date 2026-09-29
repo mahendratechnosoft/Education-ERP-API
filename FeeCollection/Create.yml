@@ -13,6 +13,7 @@ http:
         "studentId": "student-001",
         "name": "Rahul Sharma",
         "feeStructureId": "fee-structure-001",
+        "category":"OBC",
         "courseId": "0d03775a-9717-4522-86ce-b212b7a52732",
         "academicYear": "2026-27",
         "totalAmount": 150000.00,

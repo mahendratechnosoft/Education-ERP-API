@@ -10,10 +10,11 @@ http:
     type: json
     data: |-
       {
-        "id": "71d85047-98a0-4d9a-90c1-cbd52d79582a",
+        "id": "dc99d9bb-c111-4783-b76c-d1087884e1ab",
         "studentId": "student-001",
         "name": "Rahul Sharma",
         "feeStructureId": "fee-structure-001",
+        "category": "OPEN",
         "courseId": "0d03775a-9717-4522-86ce-b212b7a52732",
         "academicYear": "2026-27",
         "totalAmount": 150000.00,
