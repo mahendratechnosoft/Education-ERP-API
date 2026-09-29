@@ -15,7 +15,8 @@ http:
         "creatorIds": [],
         "from": "",
         "to": "",
-        "studentIds": []
+        "studentIds": [],
+        "statuses": []
       }
   auth: inherit
 
