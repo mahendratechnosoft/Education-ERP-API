@@ -1,0 +1,16 @@
+info:
+  name: Delete
+  type: http
+  seq: 24
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/feeCollection/delete/71d85047-98a0-4d9a-90c1-cbd52d79582a"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

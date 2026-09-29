@@ -1,0 +1,31 @@
+info:
+  name: Create
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: "{{baseUrl}}/feeCollection/create"
+  body:
+    type: json
+    data: |-
+      {
+        "studentId": "student-001",
+        "name": "Rahul Sharma",
+        "feeStructureId": "fee-structure-001",
+        "courseId": "0d03775a-9717-4522-86ce-b212b7a52732",
+        "academicYear": "2026-27",
+        "totalAmount": 150000.00,
+        "paidAmount": 50000.00,
+        "pendingAmount": 100000.00,
+        "paymentStatus": "PARTIALLY_PAID",
+        "remark": "First installment payment"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

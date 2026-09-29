@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 24
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/feeCollection/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "71d85047-98a0-4d9a-90c1-cbd52d79582a",
+        "studentId": "student-001",
+        "name": "Rahul Sharma",
+        "feeStructureId": "fee-structure-001",
+        "courseId": "0d03775a-9717-4522-86ce-b212b7a52732",
+        "academicYear": "2026-27",
+        "totalAmount": 150000.00,
+        "paidAmount": 50000.00,
+        "pendingAmount": 100000.00,
+        "paymentStatus": "PARTIALLY_PAID",
+        "remark": "First installment paymentsssssssssssssss"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
