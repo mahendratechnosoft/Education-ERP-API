@@ -1,0 +1,16 @@
+info:
+  name: getAllFeeStructureBasicInfo
+  type: http
+  seq: 24
+
+http:
+  method: GET
+  url: "{{baseUrl}}/feeStrcture/getAllFeeStructureBasicInfo"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
