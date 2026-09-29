@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/media/a7e7e7c7-2d7a-446b-9cad-439b5f5e2753_AMC_Report_2026-09-221.xlsx"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
