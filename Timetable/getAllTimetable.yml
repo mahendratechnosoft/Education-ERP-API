@@ -1,0 +1,26 @@
+info:
+  name: getAllTimetable
+  type: http
+  seq: 29
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/timetable/getAllTimetable"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "creatorIds": [],
+        "from": null,
+        "to": null,
+        "instituteId": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

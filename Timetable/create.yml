@@ -1,0 +1,30 @@
+info:
+  name: create
+  type: http
+  seq: 27
+
+http:
+  method: POST
+  url: "{{baseUrl}}/timetable/create"
+  body:
+    type: json
+    data: |-
+      {
+        "courseId": "8e987779-ddc6-4b8c-af52-6507ecf0bbfe",
+        "subjectId": "a1f41c75-c441-4b59-b222-8ebba377d116",
+        "facultyId": "user-001",
+        "facultyName": "Dr. Amit Sharma",
+        "roomCode": "ROOM-101",
+        "sectionType": "LECTURE",
+        "startTime": "2026-09-30T09:00:00",
+        "endTime": "2026-09-30T10:00:00",
+        "remark": "Regular lecture"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

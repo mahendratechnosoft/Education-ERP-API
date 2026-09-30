@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 28
+
+http:
+  method: GET
+  url: "{{baseUrl}}/timetable/getById/62eecdd7-5db8-408e-8565-1bc5ef46da35"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,7 @@
+info:
+  name: Timetable
+  type: folder
+  seq: 27
+
+request:
+  auth: inherit
