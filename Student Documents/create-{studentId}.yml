@@ -1,0 +1,27 @@
+info:
+  name: create/{studentId}
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student-documents/create/{studentId}"
+  body:
+    type: json
+    data: |-
+      {
+        "documentType":"Transfer Certificate",
+        "documentNumber":"TC-1001-1001",
+        "fileUrl":"ssc board",
+        "verificationStatus":"PENDING",
+        "physicalLocation":"Rack-101 File-2025",
+        "description":"demo description"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

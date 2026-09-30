@@ -1,0 +1,7 @@
+info:
+  name: Student Documents
+  type: folder
+  seq: 27
+
+request:
+  auth: inherit

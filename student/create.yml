@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "firstName": "Mahesh",
+        "firstName": "Lokesh",
         "middleName": "Kumar",
-        "lastName": "Patil",
+        "lastName": "Khairnar",
         "dateOfBirth": "2004-08-15",
         "gender": "Male",
         "bloodGroup": "O+",
@@ -24,20 +24,17 @@ http:
         "motherTongue": "Hindi",
         "otherLanguagesKnown": "English, Marathi",
         "domicileState": "Maharashtra",
-        
         "personalEmail": "amit.patil@gmail.com",
         "officialEmail": "amit.patil@institute.edu",
         "primaryMobile": "9876543210",
         "secondaryMobile": "8765432109",
         "description": "New student enrollment for 2026 batch",
         "profileImage": "https://storage.provider.com/profiles/amit.jpg",
-        
         "permanentAddress": "45 Park Street, Phase 1",
         "permanentCity": "Pune",
         "permanentState": "Maharashtra",
         "permanentCountry": "India",
         "permanentPincode": "411001",
-        
         "isSameAsPermanentAddress": true,
         "currentAddressType": "Hostel",
         "currentAddress": "45 Park Street, Phase 1",
@@ -45,14 +42,12 @@ http:
         "currentState": "Maharashtra",
         "currentCountry": "India",
         "currentPincode": "411001",
-        
         "registrationNumber": "REG2026001",
         "rollNumber": "CS-101",
         "admissionDate": "2026-09-01",
         "expectedGraduationDate": "2030-05-30",
         "admissionType": "Merit",
         "enrollmentStatus": "Active",
-        
         "criticalAllergies": "None",
         "medicalNotes": "Fit for sports",
         "divyangjanPwdStatus": false,
@@ -60,27 +55,22 @@ http:
         "disabilityPercentage": null,
         "familyDoctorName": "Dr. Sharma",
         "familyDoctorPhone": "9998887776",
-        
         "adharNumber": "123456789012",
         "apaarId": "AP123456",
         "abcId": "ABC987654",
         "penNumber": "PEN112233",
-        
         "bankName": "State Bank of India",
         "bankBranch": "Main Campus Branch",
         "bankAccountNumber": "31234567890",
         "bankIfscCode": "SBIN0000123",
         "isAadhaarDbtSeeded": true,
-        
         "actualExitDate": null,
         "leavingReason": null,
         "tcIssuedNumber": null,
         "tcIssueDate": null,
         "alumniId": null,
-        
-        "username": "student2",
+        "username": "student4",
         "password": "Pass@123",
-        
         "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
         "instituteName": "Institute"
       }
