@@ -14,7 +14,9 @@ http:
         "creatorIds": [],
         "from": null,
         "to": null,
-        "instituteId": ""
+        "instituteId": "",
+        "courseId": "",
+        "subjectId": ""
       }
   auth: inherit
 
