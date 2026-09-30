@@ -1,0 +1,24 @@
+info:
+  name: create
+  type: http
+  seq: 27
+
+http:
+  method: POST
+  url: "{{baseUrl}}/calendar/create"
+  body:
+    type: json
+    data: |-
+      {
+        "date": "2026-01-01",
+        "dayType": "WORKING",
+        "remark": "New Year working day"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

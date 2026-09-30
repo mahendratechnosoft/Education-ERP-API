@@ -1,0 +1,27 @@
+info:
+  name: bulkCreate
+  type: http
+  seq: 27
+
+http:
+  method: POST
+  url: "{{baseUrl}}/calendar/bulkCreate"
+  body:
+    type: json
+    data: |-
+      {
+        "fromDate": "2026-09-11",
+        "toDate": "2026-10-31",
+        "fixedWeekendDays": [
+          "SUNDAY"
+        ],
+        "alternateWeekendDay": "MONDAY"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

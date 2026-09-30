@@ -1,0 +1,34 @@
+info:
+  name: update
+  type: http
+  seq: 27
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/calendar/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "e1e3bdbb-f571-4313-814a-2ff73a24acc0",
+        "createdAt": "2026-09-30T14:46:30.0039141",
+        "updatedAt": "2026-09-30T14:46:30.0039141",
+        "createdBy": "NewDummy101",
+        "creatorId": "60bf06c7-f459-43f3-a054-15cdfd1806c6",
+        "updatedBy": "NewDummy101",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "instituteId": "39d79e57-aaa0-416f-a816-e17c2ed955ad",
+        "instituteName": "NewDummy101",
+        "date": "2026-01-01",
+        "dayType": "WORKING",
+        "remark": "New Year working day"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
