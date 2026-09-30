@@ -1,0 +1,39 @@
+info:
+  name: update
+  type: http
+  seq: 25
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payment/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "b6659dc4-981f-48fe-9afd-3f0a780e6eee",
+        "createdAt": "2026-09-29T18:29:31.9585547",
+        "updatedAt": "2026-09-29T18:29:31.9585547",
+        "createdBy": "DummyOrg",
+        "creatorId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+        "updatedBy": "DummyOrg",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "instituteId": null,
+        "instituteName": null,
+        "feeCollectionId": "fc-001",
+        "paymentAmount": 30000.00,
+        "paymentDate": "2026-09-29T18:30:00",
+        "receiptNumber": "REC-2026-00001",
+        "payementMode": "UPI",
+        "uniqueTransactionReference": "UPI-TXN-987654321",
+        "status": "SUCCESS",
+        "remark": "First partial fee payment"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: create
+  type: http
+  seq: 24
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payment/create"
+  body:
+    type: json
+    data: |-
+      {
+        "feeCollectionId": "fc-002",
+        "paymentAmount": 30000.00,
+        "paymentDate": "2026-09-29T18:30:00",
+        "receiptNumber": "REC-2026-00001",
+        "payementMode": "UPI",
+        "uniqueTransactionReference": "UPI-TXN-987654321",
+        "status": "SUCCESS",
+        "remark": "First partial fee payment"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

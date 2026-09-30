@@ -1,0 +1,27 @@
+info:
+  name: getAllPayment
+  type: http
+  seq: 25
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payment/getAllPayment"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "from": "2026-09-22T00:00:00",
+        "to": "2026-09-30T23:59:59",
+        "creatorIds": [],
+        "instituteId": "",
+        "feeCollectionId": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 25
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/payment/delete/b6659dc4-981f-48fe-9afd-3f0a780e6eee"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
