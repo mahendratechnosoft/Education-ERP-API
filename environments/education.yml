@@ -3,4 +3,4 @@ variables:
   - name: baseUrl
     value: localhost:8080
   - name: bearerToken
-    value: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJhNWQzYzE1MS0yMDMwLTQyNjEtYjY2MS1lNGIyZDgyNjgyOGMiLCJzdWIiOiJvcmciLCJpYXQiOjE3OTA2ODUzNDMsImV4cCI6MTc5MDc3MTc0M30.Fy9sH7V6hN4VKTAFzc88aGaug_CmCAXwLoqe9UNokpfcEgw0FEXClaBR3OjdkMv3JjLU9vhn0tBZVnbrOQhJpw
+    value: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJhNWQzYzE1MS0yMDMwLTQyNjEtYjY2MS1lNGIyZDgyNjgyOGMiLCJzdWIiOiJvcmciLCJpYXQiOjE3OTA3NDgxNzksImV4cCI6MTc5MDgzNDU3OX0.6DQXc5dezHZ5_u6bOk7kn_uXuAw-K8DnzXn4UoSd7vmJU3IOE4QRe9XIGBOxHks9wtmapVpD1UGq7v3w0-7fcQ

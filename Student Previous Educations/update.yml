@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/student-previous-educations/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "602fb60d-1f27-453d-821c-24b9f3b5c844",
+        "educationLevel": "10th",
+        "instituteName": "KBH high scholl",
+        "boardOrUniversity": "ssc board",
+        "passingYear": "2018",
+        "totalMarks": 500.0,
+        "obtainedMarks": 450.0,
+        "percentageOrCgpa": 90.0
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

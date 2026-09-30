@@ -1,7 +1,7 @@
 info:
-  name: FeeCollection
+  name: Student Previous Educations
   type: folder
-  seq: 23
+  seq: 26
 
 request:
   auth: inherit

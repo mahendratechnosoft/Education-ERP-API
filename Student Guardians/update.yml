@@ -1,0 +1,35 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/student-guardians/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "68238d12-d3ef-4d9f-a734-97215be941ba",
+        "fullName": "Mahesh Sathe",
+        "primaryMobile": null,
+        "relationType": "LOCAL_GURDIAN",
+        "email": null,
+        "occupation": null,
+        "annualIncome": null,
+        "isPrimaryEmergencyContact": null,
+        "isFeePayer": null,
+        "permanentAddress": null,
+        "permanentCity": null,
+        "permanentState": null,
+        "permanentCountry": null,
+        "permanentPincode": null
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
