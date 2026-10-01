@@ -1,11 +1,11 @@
 info:
-  name: getByUserId
+  name: delete
   type: http
-  seq: 11
+  seq: 4
 
 http:
-  method: GET
-  url: "{{baseUrl}}/student/getByUserId/f4ba1d04-6aa5-4a4b-876e-347eb1d1c664"
+  method: DELETE
+  url: "{{baseUrl}}/student-enrollments/delete/20667583-c4c6-48e6-a387-fa21963c31a6"
   auth: inherit
 
 settings:

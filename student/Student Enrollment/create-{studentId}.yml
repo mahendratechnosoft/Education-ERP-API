@@ -1,0 +1,30 @@
+info:
+  name: create/{studentId}
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student-enrollments/create/3cc32f92-fbd0-4f57-abbb-6b2eb04f37ef"
+  body:
+    type: json
+    data: |-
+      {
+        "academicStartDate": "2025-04-01",
+        "academicEndDate": "2026-04-01",
+        "semester": "2",
+        "section": "A",
+        "rollNumber": "2025-A1001",
+        "enrollmentStatus": "PROMOTED",
+        "promotionType": "REGULAR",
+        "enrollmentDate": "2026-10-01",
+        "current": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

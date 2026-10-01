@@ -1,7 +1,7 @@
 info:
   name: Calender
   type: folder
-  seq: 26
+  seq: 25
 
 request:
   auth: inherit
