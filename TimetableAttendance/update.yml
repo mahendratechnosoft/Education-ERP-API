@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 32
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/timetableAttendance/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "215825bf-5b57-4f11-8f1d-674065ffefba",
+        "timetableId": "14d82ab0-5fff-4fe0-a651-670e55246bc0",
+        "studentUserId": "1234562",
+        "studentName": "Kartik",
+        "status": "Not approved"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: getAllTimetableAttendance
+  type: http
+  seq: 35
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/timetableAttendance/getAllTimetableAttendance"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "from": "",
+        "to": "",
+        "creatorIds": [],
+        "instituteId": "",
+        "subjectIds": ["1cac2597-6bf5-46d3-9af1-d291f54c9f14"],
+        "courseIds": ["0ce60792-4fe7-440b-a142-e4e841bca1cb"],
+        "semisters": ["1"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 34
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/timetableAttendance/delete/215825bf-5b57-4f11-8f1d-674065ffefba"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

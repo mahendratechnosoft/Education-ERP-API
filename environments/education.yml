@@ -1,6 +1,6 @@
 name: education
 variables:
   - name: baseUrl
-    value: http://91.203.133.210:9093
+    value: localhost:8080
   - name: bearerToken
-    value: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiIyOWEwYTUzYS1kYWU4LTQzZjYtYjg4Zi0wNDBmMmNlZDcxNDUiLCJzdWIiOiJEdW1teU9yZyIsImlhdCI6MTc5MDgzMDkwNywiZXhwIjoxNzkwOTE3MzA3fQ.gyArMzICNHdlsaqDZcy1lxkZmb1kqa5CSFP07qxajdaIu9LJru4y4f5a7ffPvJ0v38G8yC1rzSnDiWIGOjfFvg
+    value: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiI2MGJmMDZjNy1mNDU5LTQzZjMtYTA1NC0xNWNkZmQxODA2YzYiLCJzdWIiOiJOZXdEdW1teTEwMSIsImlhdCI6MTc5MDg0NTMxNywiZXhwIjoxNzkwOTMxNzE3fQ.Cp8BEuWgcHwqV9LxSO4KkaFTMLklJJaRXPFxlWcvoh23A3SBX1hNhn56EKdkzHWGusoYWeZCcXWRT4oXTk3cRA
