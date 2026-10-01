@@ -5,8 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/institute/d3001dfe-81f4-42d4-9184-e9f452be96b8"
+  url: "{{baseUrl}}/institute/getById/3001dfe-81f4-42d4-9184-e9f452be96b8"
   auth: inherit
+
+runtime:
+  variables:
+    - name: baseUrl
+      value: http://91.203.133.210:9093
 
 settings:
   encodeUrl: true
