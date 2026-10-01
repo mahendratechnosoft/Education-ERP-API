@@ -1,7 +1,7 @@
 info:
   name: getAllStudentBasicInfo
   type: http
-  seq: 6
+  seq: 10
 
 http:
   method: GET

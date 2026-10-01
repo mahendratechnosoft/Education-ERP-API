@@ -1,7 +1,7 @@
 info:
-  name: Student Guardians
+  name: Student Previous Educations
   type: folder
-  seq: 25
+  seq: 2
 
 request:
   auth: inherit

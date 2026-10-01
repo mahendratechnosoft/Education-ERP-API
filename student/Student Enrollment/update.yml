@@ -1,0 +1,31 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/student-enrollments/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "20667583-c4c6-48e6-a387-fa21963c31a6",
+        "academicStartDate": "2025-04-01",
+        "academicEndDate": "2026-04-01",
+        "semester": "2",
+        "section": "A",
+        "rollNumber": "2025-A1001",
+        "enrollmentStatus": "PROMOTED",
+        "promotionType": "REGULAR",
+        "enrollmentDate": "2026-10-02",
+        "current": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
