@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/mappings/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "7cf4b401-1ceb-49df-b3e7-8cc491e8e19d",
+        "academicStartDate": "2025-04-01",
+        "academicEndDate": "2026-04-01",
+        "semester": "3",
+        "remarks":"demo remark updated"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

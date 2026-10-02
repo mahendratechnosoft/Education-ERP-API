@@ -1,0 +1,31 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/mappings/create"
+  body:
+    type: json
+    data: |-
+      {
+        "parentUserId":"8591beca-65e1-481a-82b9-72d90da8aa2d",
+        "childUserIds":[
+          "330c00b6-7470-4b7b-9fe7-5bd0ba19959e",
+          "84bd5262-803a-4e9c-940d-fec871a01c39"
+        ],
+        "mappingType":"STAFF",
+      //   "academicStartDate": "2025-04-01",
+      //   "academicEndDate": "2026-04-01",
+      //   "semester": "2",
+        "remarks":"demo remark"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

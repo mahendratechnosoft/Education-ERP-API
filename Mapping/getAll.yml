@@ -1,0 +1,29 @@
+info:
+  name: getAll
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/mappings/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "mappingType": "TEACHER_GURDIAN",
+        "parentUserId": "8591beca-65e1-481a-82b9-72d90da8aa2d",
+        "childUserId": "84bd5262-803a-4e9c-940d-fec871a01c39",
+        "semester": "2",
+        "search": "user 2",
+        "creatorIds": [],
+        "from": "",
+        "to": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
