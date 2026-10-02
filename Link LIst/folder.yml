@@ -1,0 +1,7 @@
+info:
+  name: Link LIst
+  type: folder
+  seq: 30
+
+request:
+  auth: inherit

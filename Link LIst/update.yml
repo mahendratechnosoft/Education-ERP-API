@@ -1,0 +1,27 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/link-list/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "9e3d1873-b524-4736-8fc9-b1f92cc749e9",
+        "title": "B",
+        "description": "B updated",
+        "url": null,
+        "hexColor": "#ffffff",
+        "type": "FOLDER"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
