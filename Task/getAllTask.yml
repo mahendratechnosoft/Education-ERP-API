@@ -1,0 +1,35 @@
+info:
+  name: getAllTask
+  type: http
+  seq: 39
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/task/getAllTask"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "Complete",
+        "from": "2026-09-22T00:00:00",
+        "to": "2026-10-30T23:59:59",
+      "status": "TODO",
+        "priority": "HIGH",
+        "creatorIds": [
+          "60bf06c7-f459-43f3-a054-15cdfd1806c6"
+        ],
+        "instituteId": "39d79e57-aaa0-416f-a816-e17c2ed955ad",
+        "assigneeIds": [
+          "user-id-001"
+        ],
+        "followerIds": [
+          "user-id-003"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

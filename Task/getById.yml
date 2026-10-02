@@ -1,0 +1,15 @@
+info:
+  name: getById
+  type: http
+  seq: 37
+
+http:
+  method: GET
+  url: "{{baseUrl}}/task/getById/22cc0f0f-b74c-4ca1-81f9-2d40c2e717f8"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

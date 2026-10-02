@@ -1,0 +1,51 @@
+info:
+  name: create
+  type: http
+  seq: 34
+
+http:
+  method: POST
+  url: "{{baseUrl}}/task/create"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Complete Student Enrollment Module",
+        "startDate": "2026-10-02T10:00:00",
+        "dueDate": "2026-10-05T18:00:00",
+        "status": "TODO",
+        "priority": "HIGH",
+        "description": "Complete the student enrollment module including API development, validation, and frontend integration.",
+        "relatedTo": "Student Enrollment",
+        "relatedToId": "student-enrollment-module-id",
+      "relatedToName":"bachlore of Engg",
+        "assignees": [
+          {
+            "userId": "user-id-001",
+            "name": "John Doe",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/john-doe.jpg"
+          },
+          {
+            "userId": "user-id-002",
+            "name": "Jane Smith",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/jane-smith.jpg"
+          }
+        ],
+        "followers": [
+          {
+            "userId": "user-id-003",
+            "name": "Manager",
+            "role": "MANAGER",
+            "profileImage": "/images/users/manager.jpg"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

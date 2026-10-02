@@ -1,0 +1,60 @@
+info:
+  name: update
+  type: http
+  seq: 36
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/task/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "22cc0f0f-b74c-4ca1-81f9-2d40c2e717f8",
+        "createdAt": "2026-10-02T16:21:18.279737",
+        "updatedAt": "2026-10-02T16:21:18.279737",
+        "createdBy": "NewDummy101",
+        "creatorId": "60bf06c7-f459-43f3-a054-15cdfd1806c6",
+        "updatedBy": "NewDummy101",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "instituteId": "39d79e57-aaa0-416f-a816-e17c2ed955ad",
+        "instituteName": "NewDummy101",
+        "title": "Complete Student Enrollment Module",
+        "startDate": "2026-10-02T10:00:00",
+        "dueDate": "2026-10-05T18:00:00",
+        "status": "TODO",
+        "priority": "HIGH",
+        "description": "Complete the student enrollment module including API development, validation, and frontend integration.",
+        "relatedTo": "Student Enrollment",
+        "relatedToId": "student-enrollment-module-id",
+        "assignees": [
+          {
+            "userId": "user-id-001",
+            "name": "John Doe",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/john-doe.jpg"
+          },
+          {
+            "userId": "user-id-002",
+            "name": "Jane Smith",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/jane-smith.jpg"
+          }
+        ],
+        "followers": [
+          {
+            "userId": "user-id-003",
+            "name": "Manager",
+            "role": "MANAGER",
+            "profileImage": "/images/users/manager.jpg"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
