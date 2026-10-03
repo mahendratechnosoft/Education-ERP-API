@@ -22,7 +22,10 @@ http:
         "creatorIds": [],
         "from": "",
         "to": "",
-        "statuses":["6"]
+        "statuses": [],
+        "assigneeIds": [
+          "user-id-054545"
+        ]
       }
   auth: inherit
 
@@ -31,4 +34,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

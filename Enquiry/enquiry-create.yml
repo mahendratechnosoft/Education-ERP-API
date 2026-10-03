@@ -17,7 +17,21 @@ http:
         "qualification": "12th",
         "status": "NEW",
         "message": "I am interested in B.Tech Computer Science admission.",
-        "instituteId": "INS-001"
+        "instituteId": "INS-001",
+        "assignees": [
+          {
+            "userId": "user-id-001",
+            "name": "John Doe",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/john-doe.jpg"
+          },
+          {
+            "userId": "user-id-054545",
+            "name": "Jane Smith",
+            "role": "DEVELOPER",
+            "profileImage": "/images/users/jane-smith.jpg"
+          }
+        ]
       }
   auth: inherit
 
@@ -26,4 +40,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

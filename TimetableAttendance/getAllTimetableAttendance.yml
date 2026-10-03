@@ -15,9 +15,10 @@ http:
         "to": "",
         "creatorIds": [],
         "instituteId": "",
-        "subjectIds": ["1cac2597-6bf5-46d3-9af1-d291f54c9f14"],
-        "courseIds": ["0ce60792-4fe7-440b-a142-e4e841bca1cb"],
-        "semisters": ["1"]
+        "subjectIds": [],
+        "courseIds": [],
+        "semisters": [],
+        "studentUserIds":[]
       }
   auth: inherit
 
@@ -26,4 +27,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false
