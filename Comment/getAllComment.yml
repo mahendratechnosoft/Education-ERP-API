@@ -1,0 +1,27 @@
+info:
+  name: getAllComment
+  type: http
+  seq: 37
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/comment/getAllComment"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "creatorIds": [],
+        "from": null,
+        "to": null,
+        "instituteId": "",
+        "instituteId": "",
+        "relatedToId": "student-124"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

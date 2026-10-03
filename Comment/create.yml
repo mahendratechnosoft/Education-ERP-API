@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 32
+
+http:
+  method: POST
+  url: "{{baseUrl}}/comment/create"
+  body:
+    type: json
+    data: |-
+      {
+        "message": "Please find the required documents attached.",
+        "relatedToId": "student-124",
+        "attachmentLinks": [
+          "https://example.com/files/document1.pdf",
+          "https://example.com/files/document2.pdf"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

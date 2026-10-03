@@ -5,7 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/student/getAllStudentBasicInfo"
+  url: "{{baseUrl}}/student/getAllStudentBasicInfo?instituteId=39d79e57-aaa0-416f-a816-e17c2ed955ad"
+  params:
+    - name: instituteId
+      value: 39d79e57-aaa0-416f-a816-e17c2ed955ad
+      type: query
   auth: inherit
 
 settings:
@@ -13,4 +17,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

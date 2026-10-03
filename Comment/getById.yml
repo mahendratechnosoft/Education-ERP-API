@@ -1,0 +1,15 @@
+info:
+  name: getById
+  type: http
+  seq: 34
+
+http:
+  method: GET
+  url: "{{baseUrl}}/comment/getById/cc0d6b2f-15ab-4d97-b250-91619052989e"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

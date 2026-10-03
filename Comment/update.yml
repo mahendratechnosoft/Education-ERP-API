@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 33
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/comment/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "cc0d6b2f-15ab-4d97-b250-91619052989e",
+        "createdAt": "2026-10-03T14:42:30.1788282",
+        "updatedAt": "2026-10-03T14:42:30.1788282",
+        "createdBy": "NewDummy101",
+        "creatorId": "60bf06c7-f459-43f3-a054-15cdfd1806c6",
+        "updatedBy": "NewDummy101",
+        "deleted": false,
+        "organizationId": "ae9a238a-ce02-47d7-a076-306ce1ac7ced",
+        "instituteId": "39d79e57-aaa0-416f-a816-e17c2ed955ad",
+        "instituteName": "NewDummy101",
+        "message": "Please find the required documents attached.",
+        "relatedToId": "student-1234",
+        "attachmentLinks": [
+          "https://example.com/files/document1.pdf",
+          "https://example.com/files/document2.pdf"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
