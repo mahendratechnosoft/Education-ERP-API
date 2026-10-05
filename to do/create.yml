@@ -1,0 +1,25 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/todo/create"
+  body:
+    type: json
+    data: |-
+      {
+        "description":"demo1",
+        "categoryId":"f72a7398-9dfe-4e36-86d3-98b643021075",
+        "priority":"High",
+        "status":"new"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

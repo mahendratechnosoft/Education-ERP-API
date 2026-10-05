@@ -1,0 +1,27 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/todo/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "ea1bb745-45c3-4972-9b69-354998f65b8b",
+        "instituteName": "instiute updated",
+        "description": "demo1",
+        "categoryId":"f72a7398-9dfe-4e36-86d3-98b643021075",
+        "priority": "High",
+        "status": "new"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

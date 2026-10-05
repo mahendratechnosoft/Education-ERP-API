@@ -1,0 +1,27 @@
+info:
+  name: getAll
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/todo/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "creatorIds":["a3e537af-b646-402a-ad49-40baacaa9e30"]
+      //   "search":"demo",
+      //   "categoryId":"f72a7398-9dfe-4e36-86d3-98b643021075",
+      //   "priority":"High",
+      //   "status":"new",
+      //   "instituteId":"a3e537af-b646-402a-ad49-40baacaa9e30"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
