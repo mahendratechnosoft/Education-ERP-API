@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "instituteName": "ABC Engineering College2",
+        "instituteName": "New Engg 85698",
         "shortName": "ABCEC",
         "instituteCode": "ABC-ENG-001",
         "instituteType": "COLLEGE",
@@ -65,4 +65,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

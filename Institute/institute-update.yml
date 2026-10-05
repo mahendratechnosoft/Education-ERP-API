@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "id": "d3001dfe-81f4-42d4-9184-e9f452be96b8",
+        "id": "a5a6f85f-f6e5-4026-8268-27dbe5272b57",
         "createdAt": "2026-09-17T10:44:10.2901722",
         "updatedAt": "2026-09-17T10:44:10.2901722",
         "createdBy": "Org@gmail.com",
@@ -73,4 +73,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

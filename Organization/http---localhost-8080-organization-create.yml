@@ -19,7 +19,7 @@ http:
         "gstin": "27ABCDE1234F1Z5",
         "contactNumber": "9876543210",
         "email": "info@smarttech.com",
-        "username": "Org201"
+        "username": "Org202"
        
       }
   auth: inherit
@@ -29,4 +29,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false
