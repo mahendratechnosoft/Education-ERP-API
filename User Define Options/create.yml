@@ -1,0 +1,27 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/options/create"
+  body:
+    type: json
+    data: |-
+      {
+        "category":"category 1",
+        "name":"option 3",
+        "color":"#ffffff",
+        "visibility":"INSTITUTE",
+        "defaultOption":true,
+        "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
