@@ -28,7 +28,7 @@ http:
         "department": "Computer Engineering",
         "departmentId": "dept-ce-001",
         "shiftTime": "09:00 AM - 05:00 PM",
-        "hireDate": "2024-06-10",
+        "hiredate": "2024-06-10",
         "role": "FACULTY",
         "roleId": "role-faculty-001",
         "profileImage": "https://example.com/profile/rahul-sharma.jpg",
@@ -48,4 +48,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false
