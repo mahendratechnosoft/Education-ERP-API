@@ -1,0 +1,29 @@
+info:
+  name: updated
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/options/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "6df26116-4173-46ba-919e-7dc6c4fc7454",
+        "category": "to_do_category",
+        "name": "new",
+        "color": "#ffffff",
+        "visibility": "PERSONAL",
+        "sequence": 0,
+        "active": true,
+        "defaultOption": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

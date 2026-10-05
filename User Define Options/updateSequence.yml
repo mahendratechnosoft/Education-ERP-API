@@ -1,0 +1,23 @@
+info:
+  name: updateSequence
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/options/updateSequence"
+  body:
+    type: json
+    data: |-
+      {
+        "id":"6418502e-b64b-4b59-b86d-e4776cf0e829",
+        "sequence":1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
