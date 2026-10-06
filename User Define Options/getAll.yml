@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "categories":["category 1"],
+        "categories":["category 1"]
       //   "visibility":"INSTITUTE",
       //   "search":"new",
-        "active":true
+      //   "active":true
       //   "from":"",
       //   "to":""
       }

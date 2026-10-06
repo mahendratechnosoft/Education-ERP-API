@@ -1,7 +1,7 @@
 info:
   name: Comment
   type: folder
-  seq: 38
+  seq: 31
 
 request:
   auth: inherit

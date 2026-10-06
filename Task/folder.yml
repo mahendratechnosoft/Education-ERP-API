@@ -1,7 +1,7 @@
 info:
   name: Task
   type: folder
-  seq: 40
+  seq: 32
 
 request:
   auth: inherit

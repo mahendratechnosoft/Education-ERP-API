@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/dashboard/fee-collection-trend"
+  url: "{{baseUrl}}/dashboard/enquiry-status-count"
   body:
     type: json
     data: |-

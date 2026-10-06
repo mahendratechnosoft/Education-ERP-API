@@ -1,7 +1,7 @@
 info:
   name: TimetableAttendance
   type: folder
-  seq: 36
+  seq: 30
 
 request:
   auth: inherit

@@ -1,0 +1,16 @@
+info:
+  name: markDefault
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/options/markDefault/ce14f31b-b2e2-4ba4-b44c-955c4cab6b83"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
