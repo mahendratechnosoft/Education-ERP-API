@@ -1,0 +1,24 @@
+info:
+  name: low-stock-alerts
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/dashboard/low-stock-alerts"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "form":"",
+        "to":""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
