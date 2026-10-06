@@ -1,0 +1,25 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/user-settings"
+  body:
+    type: json
+    data: |-
+      {
+        "themeId": "custom",
+        "primaryColor": "#ff5733",
+        "sidebarColor": "#1a1a2e",
+        "backgroundColor": "#ffffff"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
