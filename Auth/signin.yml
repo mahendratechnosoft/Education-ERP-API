@@ -1,26 +1,20 @@
 info:
   name: signin
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
   url: "{{baseUrl}}/signin"
-  headers:
-    - name: Content-Type
-      value: application/json
   body:
     type: json
     data: |-
       {
-        "username": "Institute",
-        "password": "Pass@123"
-      }  
+        "username":"Institute",
+        "password":"Pass@123"
+      }
 
 runtime:
-  variables:
-    - name: baseUrl
-      value: http://localhost:8080
   scripts:
     - type: after-response
       code: |-
@@ -35,4 +29,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: true
+  forwardAuthorizationHeader: false

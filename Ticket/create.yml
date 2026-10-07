@@ -10,12 +10,12 @@ http:
     type: json
     data: |-
       {
-        "subject": "first ticket",
+        "subject": "second ticket",
         "description": "have some issue",
-        "initialMessage": "please check the issue try to resolve it ",
-        "initialAttachmentUrls":["dd0b8f29-2211-49b0-99fe-6220d73e3425_GST_Report6.xlsx"],
+      //   "initialMessage": "please check the issue try to resolve it ",
+      //   "initialAttachmentUrls":["dd0b8f29-2211-49b0-99fe-6220d73e3425_GST_Report6.xlsx"],
         "priority": "LOW",
-        "categoryId": "b6ea2099-14e4-4d1f-85f2-2e651a15c61f",
+      //   "categoryId": "b6ea2099-14e4-4d1f-85f2-2e651a15c61f",
         "departmentId": "db00e2cd-2703-4d13-9067-817ad3f2b60d",
         "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
       }

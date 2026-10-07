@@ -10,13 +10,15 @@ http:
     type: json
     data: |-
       {
-      //   "subject": "",
+      //   "search": "TKT-2",
       //   "status": "",
       //   "priority": "",
       //   "requesterId": "",
       //   "assigneeId": "",
       //   "departmentId": "",
       //   "categoryId": ""
+      //   "from":"2026-10-07T17:38:00.0",
+      //   "to":"2026-10-07T17:39:00.0",
       //   "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
       }
   auth: inherit
