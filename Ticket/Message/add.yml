@@ -1,0 +1,24 @@
+info:
+  name: add
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/ticket-message/add"
+  body:
+    type: json
+    data: |-
+      {
+        "ticketId": "d4ed4cf9-33a3-4e60-a6ca-c92fb01972bc",
+        "message": "checking",
+        "attachmentUrls": ["dd0b8f29-2211-49b0-99fe-6220d73e3425_GST_Report6.xlsx"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

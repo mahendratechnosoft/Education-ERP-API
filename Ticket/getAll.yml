@@ -1,0 +1,29 @@
+info:
+  name: getAll
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/ticket/getAll"
+  body:
+    type: json
+    data: |-
+      {
+      //   "subject": "",
+      //   "status": "",
+      //   "priority": "",
+      //   "requesterId": "",
+      //   "assigneeId": "",
+      //   "departmentId": "",
+      //   "categoryId": ""
+      //   "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

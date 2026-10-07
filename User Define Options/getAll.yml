@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "categories":["category 1"]
+        "categories":["ticket_category"]
       //   "visibility":"INSTITUTE",
       //   "search":"new",
       //   "active":true

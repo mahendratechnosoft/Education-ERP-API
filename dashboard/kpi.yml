@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "instituteId":"",
         "form":"",
         "to":""
       }

@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/ticket/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "1d8304c1-e7ac-482a-a7b3-c591df58a76e",
+        "subject": "first ticket",
+        "description": "have some issue",
+        "initialMessage": "please check the issue try to resolve it ",
+        "priority": "LOW",
+        "categoryId": "b6ea2099-14e4-4d1f-85f2-2e651a15c61f",
+        "departmentId": "db00e2cd-2703-4d13-9067-817ad3f2b60d",
+        "assigneeId": "8591beca-65e1-481a-82b9-72d90da8aa2d"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
