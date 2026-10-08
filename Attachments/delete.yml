@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/attachments/delete/93a94948-2490-4a25-b889-883c8a7e9ecd"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

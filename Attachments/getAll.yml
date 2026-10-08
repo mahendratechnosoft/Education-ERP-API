@@ -1,0 +1,28 @@
+info:
+  name: getAll
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/attachments/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "",
+        "reletedTo": "EXAM",
+        "reletedToId": "8509583c-4ed4-4e36-97d4-61dc0f3998f3",
+        //   "search":"Mahesh",
+        "creatorIds": [],
+        "from": "",
+        "to": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

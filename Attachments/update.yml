@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/attachments/update"
+  body:
+    type: json
+    data: |-
+      {
+          "id": "93a94948-2490-4a25-b889-883c8a7e9ecd",
+        "url": "0968e6fa-d980-4ef4-8a1f-461672f41de1_fav.webp",
+        "name": "result updated",
+        "reletedTo": "EXAM",
+        "reletedToId": "8509583c-4ed4-4e36-97d4-61dc0f3998f3"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
