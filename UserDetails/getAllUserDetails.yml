@@ -22,7 +22,7 @@ http:
     type: json
     data: |-
       {
-        "instituteId": "",
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
         "search": "",
         "creatorIds": [],
         "from": "",

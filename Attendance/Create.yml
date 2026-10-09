@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "checkIn":true,
-        "timeStamp": 1791258000000,
-        "userId": "beb5c3a1-f02e-43ed-8d98-fb4a6b5bfb2f"
+        "checkIn":false,
+        "timeStamp": 1791259000000,
+        "userId": "c2dedd0d-dcb5-447b-8c4b-0f885de6073d"
       }
   auth: inherit
 
@@ -21,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

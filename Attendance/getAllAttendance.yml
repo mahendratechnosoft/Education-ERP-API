@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "instituteId": "b2487d1a-3a7b-4358-9a93-80544fc7a83e",
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
         "search": "",
         "creatorIds": [],
         "from": "",

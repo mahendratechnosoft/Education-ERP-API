@@ -5,7 +5,17 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/attachments/getAll"
+  url: "{{baseUrl}}/attachments/getAll?page=&size=&sort="
+  params:
+    - name: page
+      value: ""
+      type: query
+    - name: size
+      value: ""
+      type: query
+    - name: sort
+      value: ""
+      type: query
   body:
     type: json
     data: |-
@@ -13,7 +23,7 @@ http:
         "instituteId": "",
         "reletedTo": "EXAM",
         "reletedToId": "8509583c-4ed4-4e36-97d4-61dc0f3998f3",
-        //   "search":"Mahesh",
+          "search":"Mahesh",
         "creatorIds": [],
         "from": "",
         "to": ""

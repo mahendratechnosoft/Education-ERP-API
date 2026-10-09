@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "id": "e1c984f6-be79-40e2-a9c1-9811a067dbd3",
-        "timeStamp": 1758432600004,
-        "checkIn": true
+        "id": "006512b1-7876-490f-874e-6c2d1758b353",
+        "timeStamp": 1791259000000,
+        "checkIn": false
       }
   auth: inherit
 
@@ -21,3 +21,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

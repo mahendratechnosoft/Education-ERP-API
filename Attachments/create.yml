@@ -12,8 +12,8 @@ http:
       {
         "url": "0968e6fa-d980-4ef4-8a1f-461672f41de1_fav.webp",
         "name": "result",
-        "reletedTo": "EXAM",
-        "reletedToId": "8509583c-4ed4-4e36-97d4-61dc0f3998f3"
+        "reletedTo": "result",
+        "reletedToId": "517083bd-306f-4399-929a-56f6961b4cf9"
       }
   auth: inherit
 

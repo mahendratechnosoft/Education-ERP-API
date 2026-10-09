@@ -12,8 +12,8 @@ http:
       - name: file
         type: file
         value:
-          - C:\Users\HP\Downloads\GST_Report (6).xlsx
-        contentType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+          - D:\Testing Images\7486c049-f94e-4364-940c-e65337fe2321_grgur-vuckov-Ujn77KM2AGc-unsplash.jpg
+        contentType: image/jpeg
   auth: inherit
 
 settings:

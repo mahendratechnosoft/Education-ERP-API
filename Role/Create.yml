@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "departmentId": "1455",
-        "name": "Department Admin Permissions",
+        "departmentId": "065a7c84-304c-47d9-a972-c3481df28a9a",
+        "name": "Associate",
         "active": true,
         "modules": {
           "organization": {
