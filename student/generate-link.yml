@@ -1,0 +1,20 @@
+info:
+  name: generate-link
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student/generate-link?courseId=d59101d6-98b9-4a85-af32-74cf82a7753c"
+  params:
+    - name: courseId
+      value: d59101d6-98b9-4a85-af32-74cf82a7753c
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,79 @@
+info:
+  name: register
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student/public/register?token=eyJhbGciOiJIUzUxMiJ9.eyJvcmdhbml6YXRpb25JZCI6IjE5YWFmYmJkLWU4MjEtNDI2Ny1hMTg5LWMxZmJlN2FhNGU2MSIsImluc3RpdHV0ZUlkIjoiM2Q3OTY2YjMtMTQ2ZC00OGZlLTk0YTMtNTZmOGM2NTY4OWY3IiwiY291cnNlSWQiOiJkNTkxMDFkNi05OGI5LTRhODUtYWYzMi03NGNmODJhNzc1M2MiLCJpbnN0aXR1dGVOYW1lIjoiaW5zdGl1dGUyIiwic3ViIjoicmVnaXN0cmF0aW9uIiwiaWF0IjoxNzkxNTQxNzQxLCJleHAiOjE3OTE2MjgxNDF9.savDnLlgbg4v5T_fDWMGB3yKMDcHd2_SqcScZx3nK662RU7Zg4BOsyoIk17EuFkQHu-4ScTvcIkjUMlzgH5uPw"
+  params:
+    - name: token
+      value: eyJhbGciOiJIUzUxMiJ9.eyJvcmdhbml6YXRpb25JZCI6IjE5YWFmYmJkLWU4MjEtNDI2Ny1hMTg5LWMxZmJlN2FhNGU2MSIsImluc3RpdHV0ZUlkIjoiM2Q3OTY2YjMtMTQ2ZC00OGZlLTk0YTMtNTZmOGM2NTY4OWY3IiwiY291cnNlSWQiOiJkNTkxMDFkNi05OGI5LTRhODUtYWYzMi03NGNmODJhNzc1M2MiLCJpbnN0aXR1dGVOYW1lIjoiaW5zdGl1dGUyIiwic3ViIjoicmVnaXN0cmF0aW9uIiwiaWF0IjoxNzkxNTQxNzQxLCJleHAiOjE3OTE2MjgxNDF9.savDnLlgbg4v5T_fDWMGB3yKMDcHd2_SqcScZx3nK662RU7Zg4BOsyoIk17EuFkQHu-4ScTvcIkjUMlzgH5uPw
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "firstName": "Lokesh",
+        "middleName": "Kumar",
+        "lastName": "Khairnar",
+        "dateOfBirth": "2004-08-15",
+        "gender": "Male",
+        "bloodGroup": "O+",
+        "nationality": "Indian",
+        "religion": "Hindu",
+        "category": "General",
+        "categoryCertificateNumber": null,
+        "categoryValidityDate": null,
+        "motherTongue": "Hindi",
+        "otherLanguagesKnown": "English, Marathi",
+        "domicileState": "Maharashtra",
+        "personalEmail": "amit.patil@gmail.com",
+        "officialEmail": "amit.patil@institute.edu",
+        "primaryMobile": "9876543210",
+        "secondaryMobile": "8765432109",
+        "profileImage": "https://storage.provider.com/profiles/amit.jpg",
+        "permanentAddress": "45 Park Street, Phase 1",
+        "permanentCity": "Pune",
+        "permanentState": "Maharashtra",
+        "permanentCountry": "India",
+        "permanentPincode": "411001",
+        "isSameAsPermanentAddress": true,
+        "currentAddressType": "Hostel",
+        "currentAddress": "45 Park Street, Phase 1",
+        "currentCity": "Pune",
+        "currentState": "Maharashtra",
+        "currentCountry": "India",
+        "currentPincode": "411001",
+        "rollNumber": "CS-101",
+        "admissionDate": "2026-09-01",
+        "admissionType": "Merit",
+        "criticalAllergies": "None",
+        "medicalNotes": "Fit for sports",
+        "divyangjanPwdStatus": false,
+        "disabilityType": null,
+        "disabilityPercentage": null,
+        "familyDoctorName": "Dr. Sharma",
+        "familyDoctorPhone": "9998887776",
+        "adharNumber": "123456789012",
+        "apaarId": "AP123456",
+        "abcId": "ABC987654",
+        "penNumber": "PEN112233",
+        "bankName": "State Bank of India",
+        "bankBranch": "Main Campus Branch",
+        "bankAccountNumber": "31234567890",
+        "bankIfscCode": "SBIN0000123",
+        "isAadhaarDbtSeeded": true,
+        "username": "student4",
+        "password": "Pass@123",
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "instituteName": "Institute"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

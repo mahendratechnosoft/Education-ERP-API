@@ -1,0 +1,27 @@
+info:
+  name: public upload
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/media/public/upload"
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - D:\Testing Images\don-kaveen-4LLHJHyXQVk-unsplash.jpg
+        contentType: image/jpeg
+      - name: token
+        type: text
+        value: eyJhbGciOiJIUzUxMiJ9.eyJvcmdhbml6YXRpb25JZCI6IjE5YWFmYmJkLWU4MjEtNDI2Ny1hMTg5LWMxZmJlN2FhNGU2MSIsImluc3RpdHV0ZUlkIjoiM2Q3OTY2YjMtMTQ2ZC00OGZlLTk0YTMtNTZmOGM2NTY4OWY3IiwiY291cnNlSWQiOiJkNTkxMDFkNi05OGI5LTRhODUtYWYzMi03NGNmODJhNzc1M2MiLCJpbnN0aXR1dGVOYW1lIjoiaW5zdGl1dGUyIiwic3ViIjoicmVnaXN0cmF0aW9uIiwiaWF0IjoxNzkxNTQ1ODcyLCJleHAiOjE3OTE2MzIyNzJ9.TG23u4GVnvIDUyaaNrMNVj8DO1JgdEtlzKtX1H5VJIaggM38rQHSuwYdNsSwURVtPbm8qCBjjYh4mEl6rNaNWw
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

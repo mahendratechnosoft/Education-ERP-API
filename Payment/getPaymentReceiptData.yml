@@ -1,0 +1,15 @@
+info:
+  name: getPaymentReceiptData
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/payment/public/getPaymentReceiptData/9bec38c9-1db4-45a8-a002-19726c9678ee"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
