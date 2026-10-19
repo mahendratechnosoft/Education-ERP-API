@@ -8,7 +8,18 @@ http:
   url: "{{baseUrl}}/exam/getAllExam"
   body:
     type: json
-    data: "{}"
+    data: |-
+      {
+        "search": "",
+        "creatorIds": [],
+        "from": "2026-10-01T00:00:00",
+        "to": "2026-10-31T23:59:59",
+        "courseIds": [],
+        "subjectId": [],
+        "instituteId": "e7aa467f-51cd-4161-9181-0d3e84846d7a",
+        "examFrom": "2026-10-01T00:00:00",
+        "examTo": "2026-10-13T23:59:59"
+      }
   auth: inherit
 
 settings:
@@ -16,4 +27,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

@@ -10,7 +10,11 @@ http:
     type: json
     data: |-
       {
-
+        "search": "",
+        "instituteId": "e7aa467f-51cd-4161-9181-0d3e84846d7a",
+        "dayTypes": [],
+        "fromDay": "2026-10-01",
+        "toDay": "2026-10-31"
       }
   auth: inherit
 
@@ -19,4 +23,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

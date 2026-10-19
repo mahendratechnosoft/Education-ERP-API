@@ -12,7 +12,9 @@ http:
       {
         "date": "2026-01-01",
         "dayType": "WORKING",
+        "title": "This is he Event",
         "remark": "New Year working day"
+        
       }
   auth: inherit
 
@@ -21,4 +23,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false
