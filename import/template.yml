@@ -1,0 +1,23 @@
+info:
+  name: template
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/import/template?entityType=STUDENT&fileName=student_template"
+  params:
+    - name: entityType
+      value: STUDENT
+      type: query
+    - name: fileName
+      value: student_template
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

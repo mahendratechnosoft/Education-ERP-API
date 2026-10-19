@@ -1,0 +1,28 @@
+info:
+  name: import
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/import?entityType=STUDENT"
+  params:
+    - name: entityType
+      value: STUDENT
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - C:\Users\HP\Downloads\student_template.xlsx
+        contentType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
