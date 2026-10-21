@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/stock/getById/a6b7ad44-5f91-499f-ac56-d5d24dba5387"
+  url: "{{baseUrl}}/stock/getById/a7c0846e-f39f-42a8-a9e8-890f8c2eeeb3"
   auth: inherit
 
 settings:
@@ -13,4 +13,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

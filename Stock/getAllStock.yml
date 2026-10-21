@@ -16,7 +16,8 @@ http:
       //   ],
       //   "from": "2026-09-01T00:00:00",
       //   "to": "2026-10-01T23:59:59",
-        "itemType":"NON_SERIALIZE"
+      //  "itemType":"NON_SERIALIZE",
+      "warehouseIds":["d7b63319-e64f-4ba8-a445-1c860cdb20bd"]
       }
   auth: inherit
 
@@ -25,4 +26,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

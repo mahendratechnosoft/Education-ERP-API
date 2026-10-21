@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 42
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/warehouse/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "26bac57f-ad1c-4790-8878-eb364d74b912",
+        "createdAt": "2026-10-20T11:38:05.1281541",
+        "updatedAt": "2026-10-20T11:38:05.1281541",
+        "createdBy": "institute11",
+        "creatorId": "60af1b1b-e915-4d57-8366-99fea37f5e0d",
+        "updatedBy": "institute11",
+        "deleted": false,
+        "organizationId": "19aafbbd-e821-4267-a189-c1fbe7aa4e61",
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
+        "instituteName": "instiute2",
+        "name": "Main Warehouse2",
+        "location": "MIDC Industrial Area",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411019",
+        "remark": "Main warehouse for storing inventory and managing stock."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

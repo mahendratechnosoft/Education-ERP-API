@@ -1,0 +1,15 @@
+info:
+  name: delete
+  type: http
+  seq: 44
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/warehouse/delete/26bac57f-ad1c-4790-8878-eb364d74b912"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,10 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/item/getAllItemBasicInfo?instituteId="
+  url: "{{baseUrl}}/item/getAllItemBasicInfo?instituteId&type=NON_SERIALIZE"
   params:
     - name: instituteId
       value: ""
+      type: query
+    - name: type
+      value: NON_SERIALIZE
       type: query
   auth: inherit
 
@@ -17,4 +20,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false

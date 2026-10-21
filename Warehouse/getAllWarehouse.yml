@@ -1,0 +1,26 @@
+info:
+  name: getAllWarehouse
+  type: http
+  seq: 45
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/warehouse/getAllWarehouse"
+  body:
+    type: json
+    data: |
+      
+      {
+        "search": "",
+        "from": "2026-10-01T00:00:00",
+        "to": "2026-10-31T23:59:59",
+        "creatorIds": ["60af1b1b-e915-4d57-8366-99fea37f5e0d"],
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

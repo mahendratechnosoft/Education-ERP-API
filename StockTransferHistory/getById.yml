@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 43
+
+http:
+  method: GET
+  url: "{{baseUrl}}/stockTransferHistory/getById/8c6c1613-360a-4fdf-bc11-bd5653635376"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

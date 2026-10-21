@@ -1,0 +1,26 @@
+info:
+  name: create
+  type: http
+  seq: 41
+
+http:
+  method: POST
+  url: "{{baseUrl}}/warehouse/create"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Main Warehouse 2",
+        "location": "MIDC Industrial Area",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411019",
+        "remark": "Main warehouse for storing inventory and managing stock."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

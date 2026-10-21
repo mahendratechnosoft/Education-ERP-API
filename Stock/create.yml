@@ -8,9 +8,10 @@ http:
   url: "{{baseUrl}}/stock/create"
   body:
     type: json
-    data: |
+    data: |-
       {
-        "itemId": "01df2b3c-6e2e-4f95-9704-874922bd7458",
+        "warehouseId": "d7b63319-e64f-4ba8-a445-1c860cdb20bd",
+        "itemId": "2e23bc6a-7e1b-47d8-9aa9-631cff6d2aff",
         "serialNumber": "SN-987654321",
         "quantity": 50,
         "purchasePrice": 45000.50,
@@ -28,4 +29,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: false
