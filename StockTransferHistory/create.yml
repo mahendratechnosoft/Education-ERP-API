@@ -9,17 +9,27 @@ http:
   body:
     type: json
     data: |-
+      
       {
-        "itemId": "6acc291e-fb8e-4e6f-9beb-b93bcddd76dc",
         "receiverId": "employee-101",
         "receiverName": "Rahul Patil",
         "receiverType": "employee",
         "supplierId": "warehouse-101",
         "supplierName": "Main Warehouse",
         "supplierType": "warehouse",
-        "quantity": 10,
-        "serialNumber": "SN-2026-001",
-        "status": "ISSUED"
+        "status": "ISSUED",
+        "itemList": [
+          {
+            "itemId": "6acc291e-fb8e-4e6f-9beb-b93bcddd76dc",
+            "quantity": 10,
+            "serialNumber": "SN-2026-001"
+          },
+          {
+            "itemId": "6acc291e-fb8e-4e6f-9beb-b93bcddd76dc",
+            "quantity": 5,
+            "serialNumber": "SN-2026-002"
+          }
+        ]
       }
   auth: inherit
 

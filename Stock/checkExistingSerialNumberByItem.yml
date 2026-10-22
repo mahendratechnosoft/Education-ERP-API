@@ -1,0 +1,29 @@
+info:
+  name: checkExistingSerialNumberByItem
+  type: http
+  seq: 42
+
+http:
+  method: GET
+  url: http://localhost:8080/stock/checkExistingSerialNumberByItem?serialNumber=SN-987654321&itemId=2e23bc6a-7e1b-47d8-9aa9-631cff6d2aff&instituteId=3d7966b3-146d-48fe-94a3-56f8c65689f7
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  params:
+    - name: serialNumber
+      value: SN-987654321
+      type: query
+    - name: itemId
+      value: 2e23bc6a-7e1b-47d8-9aa9-631cff6d2aff
+      type: query
+    - name: instituteId
+      value: 3d7966b3-146d-48fe-94a3-56f8c65689f7
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
