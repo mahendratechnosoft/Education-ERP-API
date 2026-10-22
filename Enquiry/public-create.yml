@@ -1,0 +1,41 @@
+info:
+  name: public/create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/enquiry/public/create"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "name": "Mahesh Sharma",
+        "email": "rahul.sharma@gmail.com",
+        "phone": "9876543210",
+        "program": "Engineering",
+        "status": "New",
+        "message": "I am interested in B.Tech Computer Science admission.",
+        "city": null,
+        "state": null,
+        "country": null,
+        "pincode": null,
+        "qualification": "12th",
+        "passingYear": 0,
+        "percentage": 0.0,
+        "entranceExam": null,
+        "entranceExamScore": 0.0,
+        "enquirySource": null,
+        "enquiryType": null,
+        "priority": null,
+        "expectedAdmissionDate": null,
+        "remarks": null
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

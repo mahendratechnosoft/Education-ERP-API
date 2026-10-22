@@ -1,0 +1,7 @@
+info:
+  name: export
+  type: folder
+  seq: 40
+
+request:
+  auth: inherit
