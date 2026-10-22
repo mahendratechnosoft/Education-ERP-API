@@ -1,0 +1,25 @@
+info:
+  name: columns
+  type: http
+  seq: 41
+
+http:
+  method: GET
+  url: "{{baseUrl}}/export/columns?entityType=STUDENT"
+  params:
+    - name: entityType
+      value: STUDENT
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
+
+docs: |-
+  ## entityType:
+
+  - STUDENT
