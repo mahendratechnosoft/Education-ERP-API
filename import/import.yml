@@ -10,6 +10,10 @@ http:
     - name: entityType
       value: UserDetails
       type: query
+    - name: instituteId
+      value: ""
+      type: query
+      disabled: true
   body:
     type: multipart-form
     data:
@@ -25,7 +29,11 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
 
 docs: |-
-  Studet : Student
-  UserDetails: UserDeails // staff
+  ## entityType
+
+  - Studet : Student
+  - UserDetails: UserDeails // staff
+  - stock: STOCK

@@ -5,10 +5,16 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/import/template?entityType=UserDetails"
+  url: "{{baseUrl}}/import/template?entityType=STOCK&instituteId=f5b95623-14a6-462f-b0f9-b61f3f45bbfd&fileName=stock2"
   params:
     - name: entityType
-      value: UserDetails
+      value: STOCK
+      type: query
+    - name: instituteId
+      value: f5b95623-14a6-462f-b0f9-b61f3f45bbfd
+      type: query
+    - name: fileName
+      value: stock2
       type: query
   auth: inherit
 
@@ -17,7 +23,11 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
 
 docs: |-
-  Studet : Student
-  UserDetails: UserDeails // staff
+  ## entityType
+
+  - Studet : Student
+  - UserDetails: UserDeails // staff
+  - stock: STOCK
