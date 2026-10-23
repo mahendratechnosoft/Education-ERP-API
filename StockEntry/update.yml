@@ -1,0 +1,39 @@
+info:
+  name: update
+  type: http
+  seq: 44
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/stockEntry/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "152997c8-b50b-4c9a-a995-4db4cb1af869",
+        "createdAt": "2026-10-23T11:10:42.676815",
+        "updatedAt": "2026-10-23T11:10:42.676815",
+        "createdBy": "institute11",
+        "creatorId": "60af1b1b-e915-4d57-8366-99fea37f5e0d",
+        "updatedBy": "institute11",
+        "deleted": false,
+        "organizationId": "19aafbbd-e821-4267-a189-c1fbe7aa4e61",
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
+        "instituteName": "instiute2",
+        "stockId": "STK-001",
+        "purchasePrice": 25000.00,
+        "purchaseDate": "2026-10-01",
+        "expiryDate": "2028-10-01",
+        "warrantyMonth": 24,
+        "warrantyExpiryDate": "2028-10-01",
+        "rack": "Rack-A",
+        "subRack": "A-01",
+        "status": "Upload"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

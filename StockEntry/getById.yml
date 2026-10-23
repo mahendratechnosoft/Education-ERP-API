@@ -1,0 +1,15 @@
+info:
+  name: getById
+  type: http
+  seq: 46
+
+http:
+  method: GET
+  url: "{{baseUrl}}/stockEntry/getById/152997c8-b50b-4c9a-a995-4db4cb1af869"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

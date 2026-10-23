@@ -1,0 +1,15 @@
+info:
+  name: delete
+  type: http
+  seq: 47
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/stockEntry/delete/152997c8-b50b-4c9a-a995-4db4cb1af869"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

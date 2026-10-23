@@ -1,0 +1,29 @@
+info:
+  name: create
+  type: http
+  seq: 43
+
+http:
+  method: POST
+  url: "{{baseUrl}}/stockEntry/create"
+  body:
+    type: json
+    data: |-
+      {
+        "stockId": "STK-001",
+        "purchasePrice": 25000.00,
+        "purchaseDate": "2026-10-01",
+        "expiryDate": "2028-10-01",
+        "warrantyMonth": 24,
+        "warrantyExpiryDate": "2028-10-01",
+        "rack": "Rack-A",
+        "subRack": "A-01",
+        "status": "Upload"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
