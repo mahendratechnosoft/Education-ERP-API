@@ -1,0 +1,36 @@
+info:
+  name: time table attendance
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/export"
+  body:
+    type: json
+    data: |-
+      {
+        "entityType": "TIMETABLE_ATTENDANCE",
+        "fileName": "timetable_attendance_export",
+        "repeatParentRows": false,
+        "columns": [],
+        "filter": {
+          "instituteId": "2169f6c7-d7f0-45d9-92e2-dab631251aa8",
+          "creatorIds": [],
+          "from": "",
+          "to": "",
+          "subjectIds": [],
+          "courseIds": [],
+          "semisters": [],
+          "status": "",
+          "studentUserIds": []
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
