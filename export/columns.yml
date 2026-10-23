@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/export/columns?entityType=STUDENT"
+  url: "{{baseUrl}}/export/columns?entityType=FEE_COLLECTION"
   params:
     - name: entityType
-      value: STUDENT
+      value: FEE_COLLECTION
       type: query
   auth: inherit
 
@@ -23,3 +23,5 @@ docs: |-
   ## entityType:
 
   - STUDENT
+  - USER_DETAILS
+  - FEE_COLLECTION

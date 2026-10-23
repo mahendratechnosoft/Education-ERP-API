@@ -1,0 +1,33 @@
+info:
+  name: fee collection
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/export"
+  body:
+    type: json
+    data: |-
+      {
+        "entityType": "FEE_COLLECTION",
+        "fileName": "fee collection export",
+        "repeatParentRows": false,
+        "columns": [],
+        "filter": {
+          "instituteId": "2169f6c7-d7f0-45d9-92e2-dab631251aa8",
+          "creatorIds": [],
+          "from": "",
+          "to": "",
+          "studentIds":[],
+          "statuses":[]
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
