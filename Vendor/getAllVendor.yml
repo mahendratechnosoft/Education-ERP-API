@@ -1,0 +1,25 @@
+info:
+  name: getAllVendor
+  type: http
+  seq: 54
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/vendor/getAllVendor"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
+        "search": "ABC",
+        "creatorIds": [],
+        "from": "2026-10-01T00:00:00",
+        "to": "2026-10-23T23:59:59"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

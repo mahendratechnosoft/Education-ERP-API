@@ -1,0 +1,41 @@
+info:
+  name: create
+  type: http
+  seq: 50
+
+http:
+  method: POST
+  url: "{{baseUrl}}/vendor/create"
+  body:
+    type: json
+    data: |-
+      {
+        "vendorCode": "VEN-001",
+        "vendorName": "ABC Supplies",
+        "companyName": "ABC Supplies Pvt. Ltd.",
+        "emailAddress": "contact@abcsupplies.com",
+        "contact": "9876543210",
+        "balance": 25000.00,
+        "pan": "ABCDE1234F",
+        "gstNumber": "27ABCDE1234F1Z5",
+        "isMSMERegister": true,
+        "udyamRegistrationType": "Micro",
+        "udyamRegistrationNumber": "UDYAM-MH-01-0012345",
+        "accountHolderName": "ABC Supplies Pvt. Ltd.",
+        "bankName": "State Bank of India",
+        "accountNumber": "123456789012",
+        "ifscCode": "SBIN0001234",
+        "street": "Shop No. 12, MG Road",
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "zipCode": "411001",
+        "remark": "Approved vendor for laboratory equipment and stationery supplies."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

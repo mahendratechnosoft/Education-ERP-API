@@ -1,0 +1,51 @@
+info:
+  name: update
+  type: http
+  seq: 51
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/vendor/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "66c2430d-944f-4b68-9f4d-9c48ffb23838",
+        "createdAt": "2026-10-23T11:58:24.6882971",
+        "updatedAt": "2026-10-23T11:58:24.6882971",
+        "createdBy": "institute11",
+        "creatorId": "60af1b1b-e915-4d57-8366-99fea37f5e0d",
+        "updatedBy": "institute11",
+        "deleted": false,
+        "organizationId": "19aafbbd-e821-4267-a189-c1fbe7aa4e61",
+        "instituteId": "3d7966b3-146d-48fe-94a3-56f8c65689f7",
+        "instituteName": "instiute2",
+        "vendorCode": "VEN-001",
+        "vendorName": "ABC Supplies",
+        "companyName": "ABC Supplies Pvt. Ltd.",
+        "emailAddress": "contact@abcsupplies.com",
+        "contact": "9876543210",
+        "balance": 25000.0,
+        "pan": "ABCDE1234F",
+        "gstNumber": "27ABCDE1234F1Z5",
+        "isMSMERegister": true,
+        "udyamRegistrationType": "Micro",
+        "udyamRegistrationNumber": "UDYAM-MH-01-0012345",
+        "accountHolderName": "ABC Supplies Pvt. Ltd.",
+        "bankName": "State Bank of India",
+        "accountNumber": "123456789012",
+        "ifscCode": "SBIN0001234",
+        "street": "Shop No. 12, MG Road",
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "zipCode": "411001",
+        "remark": "Approved vendor for laboratory equipment and stationery supplies."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

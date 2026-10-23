@@ -1,0 +1,19 @@
+info:
+  name: getAllVendorBasicInfo
+  type: http
+  seq: 55
+
+http:
+  method: GET
+  url: "{{baseUrl}}/vendor/getAllVendorBasicInfo?instituteId=3d7966b3-146d-48fe-94a3-56f8c65689f7"
+  params:
+    - name: instituteId
+      value: 3d7966b3-146d-48fe-94a3-56f8c65689f7
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

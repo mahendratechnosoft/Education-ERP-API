@@ -1,0 +1,7 @@
+info:
+  name: Vendor
+  type: folder
+  seq: 56
+
+request:
+  auth: inherit

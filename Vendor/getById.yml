@@ -1,0 +1,15 @@
+info:
+  name: getById
+  type: http
+  seq: 52
+
+http:
+  method: GET
+  url: "{{baseUrl}}/vendor/getById/66c2430d-944f-4b68-9f4d-9c48ffb23838"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
