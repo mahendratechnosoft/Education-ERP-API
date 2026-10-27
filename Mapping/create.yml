@@ -10,15 +10,9 @@ http:
     type: json
     data: |-
       {
-        "parentUserId":"8591beca-65e1-481a-82b9-72d90da8aa2d",
-        "childUserIds":[
-          "330c00b6-7470-4b7b-9fe7-5bd0ba19959e",
-          "84bd5262-803a-4e9c-940d-fec871a01c39"
-        ],
-        "mappingType":"STAFF",
-      //   "academicStartDate": "2025-04-01",
-      //   "academicEndDate": "2026-04-01",
-      //   "semester": "2",
+        "parentUserId":"a8557083-f786-4ab1-b946-f81c1ed3e26a",
+        "childUserIds":["8591beca-65e1-481a-82b9-72d90da8aa2d"],
+        "mappingType":"EMPLOYEE_MAPPING",
         "remarks":"demo remark"
       }
   auth: inherit

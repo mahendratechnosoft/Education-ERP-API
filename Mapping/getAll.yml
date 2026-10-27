@@ -10,14 +10,15 @@ http:
     type: json
     data: |-
       {
-        "mappingType": "TEACHER_GURDIAN",
-        "parentUserId": "8591beca-65e1-481a-82b9-72d90da8aa2d",
-        "childUserId": "84bd5262-803a-4e9c-940d-fec871a01c39",
-        "semester": "2",
-        "search": "user 2",
-        "creatorIds": [],
-        "from": "",
-        "to": ""
+        "mappingType": "EMPLOYEE_MAPPING",
+        "parentUserId":"a5d3c151-2030-4261-b661-e4b2d826828c"
+      //   "parentUserId": "8591beca-65e1-481a-82b9-72d90da8aa2d",
+      //   "childUserId": "84bd5262-803a-4e9c-940d-fec871a01c39",
+      //   "semester": "2",
+      //   "search": "user 2",
+      //   "creatorIds": [],
+      //   "from": "",
+      //   "to": ""
       }
   auth: inherit
 
