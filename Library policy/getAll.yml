@@ -1,0 +1,29 @@
+info:
+  name: getAll
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/library-policy/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "libraryId": "a4bcab0d-ec07-46e7-a957-312f3660800d",
+        "memberType": "Teacher",
+        "status": "Active",
+        "search": "",
+        "creatorIds": ["a3e537af-b646-402a-ad49-40baacaa9e30"],
+        "from": "2026-10-31T11:12:04.260308",
+        "to": "2026-10-31T11:12:04.260308"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

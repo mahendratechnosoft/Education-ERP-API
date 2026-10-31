@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/library-member/delete/96a0ce8c-e8ad-49e9-a409-51d0ccf83ff0"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

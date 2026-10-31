@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/library-member/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "96a0ce8c-e8ad-49e9-a409-51d0ccf83ff0",
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "userId": "ed42bd19-9f3f-45f0-9645-ff77c2c414ab",
+        "memberType": "Student", // Student, Teacher, Staff
+        "membershipNumber": "meb-1002", // number on the library card
+        "joinDate": "2026-10-31",
+        "validUntil": "2027-10-31",
+        "remark": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

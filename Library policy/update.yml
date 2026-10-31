@@ -1,0 +1,31 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/library-policy/update"
+  body:
+    type: json
+    data: |-
+      {
+         "id": "230d496a-6842-4a69-b4c1-88481fba2574",
+        "instituteId":"",
+        "libraryId":"a4bcab0d-ec07-46e7-a957-312f3660800d",
+        "memberType":"Staff",
+        "maxBooks":2, 
+        "loanDays":7,
+        "maxRenewals":2,
+        "renewalDays":5, 
+        "finePerDay":100,
+        "maxFine":1000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

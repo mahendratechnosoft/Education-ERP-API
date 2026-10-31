@@ -1,0 +1,23 @@
+info:
+  name: isMembershipNumberUnique
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{baseUrl}}/library-member/isMembershipNumberUnique?membershipNumber=meb-1004&excludeId=5787a21d-030d-4138-9925-e4fff2e047ab"
+  params:
+    - name: membershipNumber
+      value: meb-1004
+      type: query
+    - name: excludeId
+      value: 5787a21d-030d-4138-9925-e4fff2e047ab
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

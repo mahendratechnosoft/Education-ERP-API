@@ -1,0 +1,28 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/library-member/create"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "6c7570d8-4dee-4718-ad26-00b99e1381b7",
+        "userId": "e9e96dfc-a602-4d4c-a48f-79a43f39dcbe",
+        "memberType": "Teacher", // Student, Teacher, Staff
+        "membershipNumber": "meb-1005", // number on the library card
+        "joinDate": "2026-10-31",
+        "validUntil": "2027-10-31",
+        "remark": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

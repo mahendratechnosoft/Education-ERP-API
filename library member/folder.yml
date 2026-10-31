@@ -1,0 +1,7 @@
+info:
+  name: library member
+  type: folder
+  seq: 44
+
+request:
+  auth: inherit
