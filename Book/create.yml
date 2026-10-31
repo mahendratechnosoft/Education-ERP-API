@@ -1,0 +1,32 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book/create"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Master mind org",
+        "isbn": "isbn-1001",
+        "author": "mahesh, ganesh", // comma separated if more than one
+        "publisher": "pune publisher",
+        "edition": "1st",
+        "publicationYear": "2025",
+        "language": "Marathi",
+        "category": "demo",
+        "pages": 100,
+        "image": "",
+        "description": "1000 character desciption "
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

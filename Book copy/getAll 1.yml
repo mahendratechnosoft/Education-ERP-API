@@ -1,0 +1,31 @@
+info:
+  name: getAll
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/book-copy/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "",
+        "bookId": "b1c41f82-8428-4260-b1c9-e566530c1049",
+        "libraryId": "a4bcab0d-ec07-46e7-a957-312f3660800d",
+        "vendorId": "30d99c91-6051-4cc2-8e85-748f700862c9",
+        "status": "Available", // Available, Issued, Reserved, Lost, Damaged, Withdrawn
+        "bookCondition": "", // New, Good, Fair, Poor
+        "search": "wing",
+        "creatorIds": ["a3e537af-b646-402a-ad49-40baacaa9e30"],
+        "from": "2026-10-31T04:38:01.296839",
+        "to": "2026-10-31T04:38:01.296839"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

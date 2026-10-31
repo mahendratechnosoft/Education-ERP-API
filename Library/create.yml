@@ -1,0 +1,27 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/library/create"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Library 1 institue2",
+        "location": "demo institue builind one floor 2",
+        "city": "nashik",
+        "state": "maharastra",
+        "pincode": "422203",
+        "remark": "500 charcter remark"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,28 @@
+info:
+  name: getAll
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/library/getAll"
+  body:
+    type: json
+    data: |-
+      
+      {
+        "search": ""
+      //   "from": "2026-10-01T00:00:00",
+      //   "to": "2026-10-31T23:59:59",
+      //   "status":"Active",
+      //   "creatorIds": ["a3e537af-b646-402a-ad49-40baacaa9e30"],
+      //   "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

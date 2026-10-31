@@ -1,0 +1,33 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/book/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "219240b3-6b47-49eb-9ef6-6d8c231fff58",
+        "title": "soul instute 2 ",
+        "isbn": "isbn-1001",
+        "author": "mahesh, ganesh", // comma separated if more than one
+        "publisher": "pune publisher",
+        "edition": "2nd",
+        "publicationYear": "2025",
+        "language": "Marathi",
+        "category": "demo",
+        "pages": 100,
+        "image": "",
+        "description": "1000 character desciption "
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

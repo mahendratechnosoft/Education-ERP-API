@@ -1,0 +1,46 @@
+info:
+  name: bulk-create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book-copy/bulk-create"
+  body:
+    type: json
+    data: |-
+      {
+        "libraryId": "a4bcab0d-ec07-46e7-a957-312f3660800d",
+        "vendorId": "30d99c91-6051-4cc2-8e85-748f700862c9",
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "copies": [
+          {
+            "bookId": "b1c41f82-8428-4260-b1c9-e566530c1049",
+            "bookNumber": "book-10001",
+            "rack": "rack-1",
+            "shelf": "shelf-1",
+            "bookCondition": "",
+            "purchasePrice": "",
+            "purchaseDate": "",
+            "remark": ""
+          },
+          {
+            "bookId": "b1c41f82-8428-4260-b1c9-e566530c1049",
+            "bookNumber": "book-10002",
+            "rack": "rack-1",
+            "shelf": "shelf-1",
+            "bookCondition": "",
+            "purchasePrice": "100",
+            "purchaseDate": "2026-10-31",
+            "remark": ""
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

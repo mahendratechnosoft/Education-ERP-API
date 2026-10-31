@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/library/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "0adaa9ca-392b-4f5f-894c-ace1105125f6",
+        "name": "Library 1 institue2",
+        "location": "demo institue builind one floor 2",
+        "city": "nashik",
+        "state": "maharastra",
+        "pincode": "422203",
+        "remark": "500 charcter remark",
+        "status": "Active"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

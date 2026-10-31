@@ -1,0 +1,29 @@
+info:
+  name: getAllBook
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/book/getAllBook"
+  body:
+    type: json
+    data: |-
+      
+      {
+        "search": ""
+      //   "from": "2026-10-01T00:00:00",
+      //   "to": "2026-10-31T23:59:59",
+      //   "category":"demo",
+      //   "language":"Marathi",
+      //   "creatorIds": ["30fd2d13-b0f2-43f0-ae8c-9e0b9fdb9a5e"],
+      //   "instituteId": "f5b95623-14a6-462f-b0f9-b61f3f45bbfd"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
