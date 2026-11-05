@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payroll-profile/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "2802a801-9126-4a39-b907-b7db265e7648",
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "userDetailsId": "d38d748d-69b8-4a24-b1ed-a34db96ba691", // BANK_TRANSFER, CASH, CHEQUE
+        "paymentMode": "BANK_TRANSFER", // Bank details (required when paymentMode = BANK_TRANSFER)
+        "bankName": "Uco",
+        "accountHolderName": "demo holder",
+        "accountNumber": "98765432143215",
+        "ifscCode": "UCO00023",
+        "branchName": "Pune Branch",
+        "panNumber": "872kjsdf",
+        "uanNumber": "",
+        "pfNumber": "",
+        "esiNumber": "",
+        "payrollEnabled": true,
+        "payrollStartDate": "2026-01-01"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

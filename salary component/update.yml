@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/salary-component/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "b0e2ed30-be9a-49a6-abd7-7437b4c2b08f",
+        "instituteId": "", // null for organisation admin 
+        "name": "Basic",
+        "type": "EARNING", // EARNING, DEDUCTION
+        "calculationType": "", // FIXED, PERCENT_OF_BASIC
+        "defaultValue": "", // null for basic 
+        "basic": true,
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

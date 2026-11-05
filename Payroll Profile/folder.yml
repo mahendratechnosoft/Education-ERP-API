@@ -1,0 +1,7 @@
+info:
+  name: Payroll Profile
+  type: folder
+  seq: 51
+
+request:
+  auth: inherit

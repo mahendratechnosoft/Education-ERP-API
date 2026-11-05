@@ -1,0 +1,16 @@
+info:
+  name: toggle-status
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payroll-profile/toggle-status/2802a801-9126-4a39-b907-b7db265e7648"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

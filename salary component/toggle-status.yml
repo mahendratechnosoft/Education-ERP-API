@@ -1,0 +1,16 @@
+info:
+  name: toggle-status
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/salary-component/toggle-status/80137e47-2c1e-429c-8b88-2535a1bf8e74"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

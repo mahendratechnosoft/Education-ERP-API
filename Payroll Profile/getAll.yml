@@ -1,0 +1,30 @@
+info:
+  name: getAll
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payroll-profile/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "search": "",
+        "userDetailsId": "",
+        "paymentMode": "BANK_TRANSFER",
+        "payrollEnabled": true,
+        "creatorIds": ["a3e537af-b646-402a-ad49-40baacaa9e30"],
+        "userDetailsIds": ["d38d748d-69b8-4a24-b1ed-a34db96ba691"],
+        "from": "2026-11-05T03:53:56.03991",
+        "to": "2026-11-05T05:53:56.03991"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

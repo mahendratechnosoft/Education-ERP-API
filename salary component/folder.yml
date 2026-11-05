@@ -1,0 +1,7 @@
+info:
+  name: salary component
+  type: folder
+  seq: 52
+
+request:
+  auth: inherit
