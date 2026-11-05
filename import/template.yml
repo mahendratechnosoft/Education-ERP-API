@@ -5,16 +5,16 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/import/template?entityType=STOCK&instituteId=f5b95623-14a6-462f-b0f9-b61f3f45bbfd&fileName=stock2"
+  url: "{{baseUrl}}/import/template?entityType=BOOK_COPY&instituteId=019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b&fileName=book copy"
   params:
     - name: entityType
-      value: STOCK
+      value: BOOK_COPY
       type: query
     - name: instituteId
-      value: f5b95623-14a6-462f-b0f9-b61f3f45bbfd
+      value: 019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b
       type: query
     - name: fileName
-      value: stock2
+      value: book copy
       type: query
   auth: inherit
 
@@ -31,3 +31,6 @@ docs: |-
   - Studet : Student
   - UserDetails: UserDeails // staff
   - stock: STOCK
+  - item: ITEM
+  - book:BOOK
+  - book stock: BOOK_COPY

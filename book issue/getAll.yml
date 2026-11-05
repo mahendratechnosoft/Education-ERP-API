@@ -1,0 +1,33 @@
+info:
+  name: getAll
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/book-issue/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "search": "",
+      //   "memberId": "c3e72a6b-331e-429b-9574-405be0050477",
+      //   "bookId": "0bd0d129-ce96-4a4e-b933-c4428d968adc",
+        "bookCopyId":"10c195ea-d6dd-4bf4-9795-684e5efa7f13",
+      //   "libraryId": "ae1dc431-f6bc-4028-b913-0ff59751e9b6",
+      //   "status": "Issued",
+      //   "overdueOnly": false,
+      //   "hasUnpaidFine": false,
+      //   "creatorIds": ["a3e537af-b646-402a-ad49-40baacaa9e30"],
+        "from": "2026-11-01T00:00:00",
+        "to": "2026-11-30T23:59:59"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

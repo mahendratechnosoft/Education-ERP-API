@@ -1,7 +1,7 @@
 info:
   name: Library policy
   type: folder
-  seq: 43
+  seq: 44
 
 request:
   auth: inherit

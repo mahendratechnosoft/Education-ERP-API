@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/book-issue/delete/467f0764-1a76-4cd5-b5ef-c5bebf12f9e6"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

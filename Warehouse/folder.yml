@@ -1,7 +1,7 @@
 info:
   name: Warehouse
   type: folder
-  seq: 40
+  seq: 41
 
 request:
   auth: inherit

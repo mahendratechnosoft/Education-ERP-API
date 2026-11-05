@@ -1,0 +1,32 @@
+info:
+  name: update
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/book-issue/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "467f0764-1a76-4cd5-b5ef-c5bebf12f9e6",
+      "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "issueDate": "2026-11-01",
+        "dueDate": "2026-11-04",
+        "returnDate": "2026-11-01",
+        "renewalCount": 0,
+        "fineAmount": 1000.00,
+        "finePaid": 500.00,
+        "returnCondition": "Lost",
+        "status": "Lost",
+        "remark": "updated"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

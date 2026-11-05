@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/library-member/getByUserId/ed42bd19-9f3f-45f0-9645-ff77c2c414ab"
+  url: "{{baseUrl}}/library-member/getByUserId/9a2316f6-29b3-4473-a1e0-e2109273698a"
   auth: inherit
 
 settings:

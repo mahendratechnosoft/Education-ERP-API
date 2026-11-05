@@ -5,22 +5,21 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/import?entityType=UserDetails"
+  url: "{{baseUrl}}/import?entityType=BOOK_COPY&instituteId=019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b"
   params:
     - name: entityType
-      value: UserDetails
+      value: BOOK_COPY
       type: query
     - name: instituteId
-      value: ""
+      value: 019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b
       type: query
-      disabled: true
   body:
     type: multipart-form
     data:
       - name: file
         type: file
         value:
-          - C:\Users\admin\Downloads\userdetails_import_template.xlsx
+          - C:\Users\HP\Downloads\book copy.xlsx
         contentType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
   auth: inherit
 
@@ -37,3 +36,5 @@ docs: |-
   - Studet : Student
   - UserDetails: UserDeails // staff
   - stock: STOCK
+  - item: ITEM
+  - book stock: BOOK_COPY

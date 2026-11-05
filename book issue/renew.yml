@@ -1,0 +1,23 @@
+info:
+  name: renew
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book-issue/renew"
+  body:
+    type: json
+    data: |-
+      {
+        "issueId":"a6d85843-adf0-4ca7-91b2-2e9ae5360d04",
+        "remark":"renewed"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

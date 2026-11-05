@@ -1,0 +1,23 @@
+info:
+  name: collect-fine
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book-issue/collect-fine"
+  body:
+    type: json
+    data: |-
+      {
+        "issueId":"467f0764-1a76-4cd5-b5ef-c5bebf12f9e6",
+        "amount":500
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

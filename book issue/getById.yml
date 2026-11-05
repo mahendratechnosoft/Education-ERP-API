@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/book-issue/getById/68ec60c6-8797-49be-8a7b-0326232ab240"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

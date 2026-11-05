@@ -1,0 +1,7 @@
+info:
+  name: book issue
+  type: folder
+  seq: 47
+
+request:
+  auth: inherit

@@ -1,0 +1,24 @@
+info:
+  name: return
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book-issue/return"
+  body:
+    type: json
+    data: |-
+      {
+        "issueId": "467f0764-1a76-4cd5-b5ef-c5bebf12f9e6",
+        "returnCondition": "Lost",
+        "remark": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

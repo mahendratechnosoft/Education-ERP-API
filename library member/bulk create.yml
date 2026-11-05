@@ -1,0 +1,48 @@
+info:
+  name: bulk create
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/library-member/bulk-create"
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "instituteId": "6c7570d8-4dee-4718-ad26-00b99e1381b7",
+          "userId": "7fa9dd4a-fd98-4a19-84d4-ce9c7d1962ca",
+          "memberType": "Teacher", // Student, Teacher, Staff
+          "membershipNumber": "meb-1006", // number on the library card
+          "joinDate": "2026-10-31",
+          "validUntil": "2027-10-31",
+          "remark": ""
+        },
+        {
+          "instituteId": "6c7570d8-4dee-4718-ad26-00b99e1381b7",
+          "userId": "795d6973-2bbb-4454-9092-7426dd1d9a14",
+          "memberType": "Teacher", // Student, Teacher, Staff
+          "membershipNumber": "meb-1007", // number on the library card
+          "joinDate": "2026-10-31",
+          "validUntil": "2027-10-31",
+          "remark": ""
+        },
+        {
+          "instituteId": "6c7570d8-4dee-4718-ad26-00b99e1381b7",
+          "userId": "25dde06c-004a-4b6d-9942-9aa250f973ec",
+          "memberType": "Teacher", // Student, Teacher, Staff
+          "membershipNumber": "meb-1008", // number on the library card
+          "joinDate": "2026-10-31",
+          "validUntil": "2027-10-31",
+          "remark": ""
+        }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

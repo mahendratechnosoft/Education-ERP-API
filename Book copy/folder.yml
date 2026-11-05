@@ -1,7 +1,7 @@
 info:
   name: "Book copy "
   type: folder
-  seq: 44
+  seq: 45
 
 request:
   auth: inherit

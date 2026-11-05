@@ -1,0 +1,25 @@
+info:
+  name: issue
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/book-issue/issue"
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "memberId": "c3e72a6b-331e-429b-9574-405be0050477",
+        "bookCopyId": "f5b17fa2-1c9b-4374-b20c-86ef7af59b5b",
+        "remark": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,7 +1,7 @@
 info:
   name: StockTransferHistory
   type: folder
-  seq: 46
+  seq: 48
 
 request:
   auth: inherit
