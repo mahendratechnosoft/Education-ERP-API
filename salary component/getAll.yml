@@ -12,8 +12,8 @@ http:
       {
         "search": "",
         "type": "EARNING",
-        "calculationType": "FIXED",
-        "basic": true,
+      //   "calculationType": "FIXED",
+      //   "basic": true,
         "active": true,
         "instituteId": "",
         "orgLevelOnly": true,

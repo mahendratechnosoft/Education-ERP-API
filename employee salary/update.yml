@@ -1,0 +1,42 @@
+info:
+  name: update
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/employee-salary/update"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "5691b8bb-00d8-454f-b7f6-1c07184b20e1",
+        "userDetailsId": "8d709823-2b81-4a12-b6f7-14c3616278a0",
+        "effectiveFrom": "2026-02-10", // always first day of month 
+        "remarks": "",
+        "lines": [
+          {
+            "id": "30379b7c-738f-44c6-9497-cb8ba1382bdb",
+            "componentId": "80137e47-2c1e-429c-8b88-2535a1bf8e74",
+            "value": 20000
+          },
+          {
+            "id": "e987488d-7dfa-4300-9c06-90b9b3f0e168",
+            "componentId": "217f34de-5de8-4e41-a5e2-817668d929f4",
+            "value": 40
+          },
+          {
+            "id": "a968e081-4c11-4e3f-a111-f56af6faeaf1",
+            "componentId": "a104bd9f-c396-4607-bf70-8fec8b45f0da",
+            "value": 300
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

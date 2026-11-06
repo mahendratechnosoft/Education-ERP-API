@@ -1,0 +1,31 @@
+info:
+  name: getAll
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/employee-salary/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "search": "",
+        "userDetailsId": "",
+        "userDetailsIds": ["7bc86e40-d40c-4638-8f2b-2d8d1c02d527"],
+        "instituteId": "",
+        "orgLevelOnly": true,
+        "effectiveFromStart": "2026-01-01",
+        "effectiveFromEnd": "2026-01-01",
+        "creatorIds": ["a5d3c151-2030-4261-b661-e4b2d826828c"],
+        "from": "2026-11-01T12:19:29.2937",
+        "to": "2026-11-06T12:19:29.2937"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-         "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
-        "userDetailsId": "fc6ee93d-e238-4579-be86-461ade4216ee", // BANK_TRANSFER, CASH, CHEQUE
+      //    "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "userDetailsId": "8d709823-2b81-4a12-b6f7-14c3616278a0", // BANK_TRANSFER, CASH, CHEQUE
         "paymentMode": "BANK_TRANSFER", // Bank details (required when paymentMode = BANK_TRANSFER)
         "bankName": "Uco",
         "accountHolderName": "demo holder",
