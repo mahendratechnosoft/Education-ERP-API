@@ -1,0 +1,29 @@
+info:
+  name: update
+  type: http
+  seq: 55
+
+http:
+  method: PUT
+  url: http://localhost:8080/purchaseOrderApproval/update
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiIyOWEwYTUzYS1kYWU4LTQzZjYtYjg4Zi0wNDBmMmNlZDcxNDUiLCJzdWIiOiJEdW1teU9yZyIsImlhdCI6MTc5NDgxMjcxNiwiZXhwIjoxNzk0ODk5MTE2fQ.Nig_UV3XwiwLRPouKid_w2hj4i5k2FPYJLQreXICj9CfUpeTsoVpTURY_7_lQ9gXV-TWYnpEOSBY1XYs7RcPRA
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "id": "a74934b8-2fbf-4c4d-950e-8f67a82e41c0",
+        "userId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+        "defaultApproval": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

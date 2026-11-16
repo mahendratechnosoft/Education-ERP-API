@@ -1,0 +1,23 @@
+info:
+  name: getAllLeaveTypeBasicInfo
+  type: http
+  seq: 57
+
+http:
+  method: GET
+  url: http://localhost:8080/leaveType/getAllLeaveTypeBasicInfo?instituteId=
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  params:
+    - name: instituteId
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

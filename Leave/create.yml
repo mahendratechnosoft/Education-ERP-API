@@ -1,0 +1,86 @@
+info:
+  name: create
+  type: http
+  seq: 56
+
+http:
+  method: POST
+  url: http://localhost:8080/leaves/create
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"requesterId\": \"29a0a53a-dae8-43f6-b88f-040f2ced7145\",\r
+
+      \  \"requesterName\": \"Rahul Patil\",\r
+
+      \  \"requestToId\": \"MANAGER_USER_ID\",\r
+
+      \  \"requestToName\": \"Department Manager\",\r
+
+      \  \"handoverId\": \"COLLEAGUE_USER_ID\",\r
+
+      \  \"handoverToName\": \"Colleague Name\",\r
+
+      \  \"leaveStartDate\": \"2026-11-10\",\r
+
+      \  \"leaveEndDate\": \"2026-11-12\",\r
+
+      \  \"leaveType\": \"Sick Leave\",\r
+
+      \  \"reason\": \"Medical consultation and recovery\",\r
+
+      \  \"instituteId\": \"ae9a238a-ce02-47d7-a076-306ce1ac7ced\",\r
+
+      \  \"status\": \"PENDING\",\r
+
+      \  \"attachment\": \"\",\r
+
+      \  \"leaveDays\": [\r
+
+      \    {\r
+
+      \      \"date\": \"2026-11-10\",\r
+
+      \      \"type\": \"FULL_DAY\",\r
+
+      \      \"leaveType\": \"FULL_DAY\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"date\": \"2026-11-11\",\r
+
+      \      \"type\": \"FULL_DAY\",\r
+
+      \      \"leaveType\": \"FULL_DAY\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"date\": \"2026-11-12\",\r
+
+      \      \"type\": \"FIRST_HALF_DAY\",\r
+
+      \      \"leaveType\": \"FIRST_HALF_DAY\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,19 @@
+info:
+  name: delete
+  type: http
+  seq: 58
+
+http:
+  method: DELETE
+  url: http://localhost:8080/leaveApproval/delete/LEAVE_APPROVAL_ID
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

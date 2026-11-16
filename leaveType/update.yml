@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 57
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaveType/update
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"LEAVE_TYPE_ID\",\r
+
+      \  \"type\": \"Casual Leave\",\r
+
+      \  \"annualLeaveAllocation\": 14,\r
+
+      \  \"unPaid\": false,\r
+
+      \  \"instituteId\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

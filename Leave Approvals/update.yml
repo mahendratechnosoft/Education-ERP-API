@@ -1,0 +1,36 @@
+info:
+  name: update
+  type: http
+  seq: 58
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaveApproval/update
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"LEAVE_APPROVAL_ID\",\r
+
+      \  \"approverId\": \"USER001\",\r
+
+      \  \"approverName\": \"Senior Department Manager\",\r
+
+      \  \"instituteId\": null,\r
+
+      \  \"role\": \"ORGANIZATION_ADMIN\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

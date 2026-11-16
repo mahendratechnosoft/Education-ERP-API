@@ -1,0 +1,19 @@
+info:
+  name: delete
+  type: http
+  seq: 55
+
+http:
+  method: DELETE
+  url: http://localhost:8080/purchaseOrderApproval/delete/po-approval-uuid-1234
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

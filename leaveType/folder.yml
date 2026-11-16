@@ -1,0 +1,7 @@
+info:
+  name: leaveType
+  type: folder
+  seq: 57
+
+request:
+  auth: inherit

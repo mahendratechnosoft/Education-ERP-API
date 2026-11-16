@@ -1,0 +1,56 @@
+info:
+  name: getAllLeaves
+  type: http
+  seq: 56
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaves/getAllLeaves?page=0&size=10&sort=createdAt%2Cdesc
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+    - name: sort
+      value: createdAt%2Cdesc
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"search\": \"\",\r
+
+      \  \"creatorIds\": [],\r
+
+      \  \"from\": \"\",\r
+
+      \  \"to\": \"\",\r
+
+      \  \"requesterIds\": [],\r
+
+      \  \"requestToIds\": [],\r
+
+      \  \"instituteId\": \"\",\r
+
+      \  \"leaveFrom\": \"\",\r
+
+      \  \"leaveTo\": \"\",\r
+
+      \  \"status\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

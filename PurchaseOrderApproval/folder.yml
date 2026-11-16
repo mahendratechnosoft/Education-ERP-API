@@ -1,0 +1,7 @@
+info:
+  name: PurchaseOrderApproval
+  type: folder
+  seq: 55
+
+request:
+  auth: inherit

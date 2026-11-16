@@ -1,0 +1,74 @@
+info:
+  name: update
+  type: http
+  seq: 56
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaves/update
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"LEAVE_ID\",\r
+
+      \  \"requesterId\": \"29a0a53a-dae8-43f6-b88f-040f2ced7145\",\r
+
+      \  \"requesterName\": \"Rahul Patil\",\r
+
+      \  \"requestToId\": \"MANAGER_USER_ID\",\r
+
+      \  \"requestToName\": \"Department Manager\",\r
+
+      \  \"handoverId\": \"COLLEAGUE_USER_ID\",\r
+
+      \  \"handoverToName\": \"Colleague Name\",\r
+
+      \  \"leaveStartDate\": \"2026-11-10\",\r
+
+      \  \"leaveEndDate\": \"2026-11-11\",\r
+
+      \  \"leaveType\": \"Sick Leave\",\r
+
+      \  \"reason\": \"Updated reason\",\r
+
+      \  \"status\": \"PENDING\",\r
+
+      \  \"leaveDays\": [\r
+
+      \    {\r
+
+      \      \"date\": \"2026-11-10\",\r
+
+      \      \"type\": \"FULL_DAY\",\r
+
+      \      \"leaveType\": \"FULL_DAY\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"date\": \"2026-11-11\",\r
+
+      \      \"type\": \"FULL_DAY\",\r
+
+      \      \"leaveType\": \"FULL_DAY\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

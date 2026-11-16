@@ -1,0 +1,23 @@
+info:
+  name: create
+  type: http
+  seq: 54
+
+http:
+  method: POST
+  url: http://localhost:8080/purchaseOrderApproval/create
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+        "defaultApproval": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
