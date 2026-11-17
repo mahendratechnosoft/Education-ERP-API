@@ -1,0 +1,40 @@
+info:
+  name: getAllLeaveSetting
+  type: http
+  seq: 59
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaveSetting/getAllLeaveSetting?page=0&size=20&sort=createdAt%2Cdesc
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "20"
+      type: query
+    - name: sort
+      value: createdAt%2Cdesc
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"role\": \"ORGANIZATION_ADMIN\",\r
+
+      \  \"instituteId\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,16 @@
+info:
+  name: getById
+  type: http
+  seq: 60
+
+http:
+  method: GET
+  url: http://localhost:8080/purchaseRequisition/getById/176eb361-eb4c-4332-a443-4c6450b67574
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

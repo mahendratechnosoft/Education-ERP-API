@@ -1,0 +1,52 @@
+info:
+  name: Update
+  type: http
+  seq: 59
+
+http:
+  method: PUT
+  url: http://localhost:8080/leaveSetting/update
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"LEAVE_SETTING_ID\",\r
+
+      \  \"role\": \"ORGANIZATION_ADMIN\",\r
+
+      \  \"instituteId\": null,\r
+
+      \  \"leaveStartDate\": \"--01-01\",\r
+
+      \  \"enableMaxMonthlyLeave\": true,\r
+
+      \  \"maxMonthlyLeave\": 4,\r
+
+      \  \"enableMaxConsecutiveLeave\": true,\r
+
+      \  \"maxConsecutiveLeave\": 5,\r
+
+      \  \"enablemaxCarryForwardLeaveNextYear\": true,\r
+
+      \  \"enableMaxCarryForwardLeaveNextYear\": true,\r
+
+      \  \"maxCarryForwardLeaveNextYear\": 10,\r
+
+      \  \"carryForwardLeaveExpiryDate\": \"--03-31\",\r
+
+      \  \"carryForwordStartYear\": 2026\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

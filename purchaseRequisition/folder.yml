@@ -1,0 +1,7 @@
+info:
+  name: purchaseRequisition
+  type: folder
+  seq: 60
+
+request:
+  auth: inherit

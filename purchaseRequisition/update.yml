@@ -1,0 +1,45 @@
+info:
+  name: update
+  type: http
+  seq: 60
+
+http:
+  method: PUT
+  url: http://localhost:8080/purchaseRequisition/update
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+  body:
+    type: json
+    data: |-
+      {
+        "id": "baf9ea76-e745-4ba3-a602-0b20a86a52db",
+        "users": [
+            {
+              "userId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+              "status": "APPROVED"
+            },
+            {
+              "userId": "29a0a53a-dae8-43f6-b88f-040f2ced7145",
+              "status": "ON_HOLD"
+            }
+          ],
+        "items": [
+          {
+            "itemId": "68d5e285-9a85-4843-871e-efdead95d9a2",
+            "requestedQuantity": 25.0,
+            "approvedQuantity": 20.0,
+            "remarks": "Approved 20 units based on budget"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
