@@ -1,0 +1,16 @@
+info:
+  name: Purchase Requisition
+  type: http
+  seq: 61
+
+http:
+  method: POST
+  url: "{{baseUrl}}/purchaseRequisition/convertToPO/eead0c5a-f126-4008-bf0c-3be389d58fe5"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
