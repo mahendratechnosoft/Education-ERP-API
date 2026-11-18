@@ -1,0 +1,19 @@
+info:
+  name: delete
+  type: http
+  seq: 64
+
+http:
+  method: DELETE
+  url: http://localhost:8080/purchaseOrder/delete/b6a14dee-98a1-4d23-9412-dd77a9928124
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

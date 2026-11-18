@@ -1,0 +1,48 @@
+info:
+  name: getAllPurchaseOrder
+  type: http
+  seq: 63
+
+http:
+  method: PUT
+  url: http://localhost:8080/purchaseOrder/getAllPurchaseOrder?page=0&size=10&sort=createdAt,desc
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+    - name: sort
+      value: createdAt,desc
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "search": "PO-2026",
+        "status": "APPROVED",
+        "instituteId": "",
+        "purchaseOrderNumber": "PO-2026-001",
+        "purchaseOrderDateFrom": "2026-11-01",
+        "purchaseOrderDateTo": "2026-11-30",
+        "expectedDeliveryDateFrom": "2026-11-15",
+        "expectedDeliveryDateTo": "2026-11-30",
+        "from": "2026-11-01T00:00:00",
+        "to": "2026-11-30T23:59:59",
+        "creatorIds": [],
+        "requestedToUserIds": []
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,16 @@
+info:
+  name: purchaseOrderItems
+  type: http
+  seq: 61
+
+http:
+  method: GET
+  url: "{{baseUrl}}/purchaseOrderItems/getByPurchaseOrderId/f47d7488-0ad8-42f5-91de-9b762ccf3935"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

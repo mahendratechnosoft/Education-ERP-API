@@ -1,0 +1,29 @@
+info:
+  name: updateUserStatus
+  type: http
+  seq: 61
+
+http:
+  method: PUT
+  url: http://localhost:8080/purchaseOrder/updateUserStatus?id=68751172-0f70-41ce-8797-64c9f28c3370&userId=29a0a53a-dae8-43f6-b88f-040f2ced7145&status=APPROVED
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  params:
+    - name: id
+      value: 68751172-0f70-41ce-8797-64c9f28c3370
+      type: query
+    - name: userId
+      value: 29a0a53a-dae8-43f6-b88f-040f2ced7145
+      type: query
+    - name: status
+      value: APPROVED
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

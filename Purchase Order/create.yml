@@ -1,0 +1,62 @@
+info:
+  name: create
+  type: http
+  seq: 60
+
+http:
+  method: POST
+  url: http://localhost:8080/purchaseOrder/create
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: json
+    data: |-
+      {
+        "purchaseOrderNumber": "PO-2026-001",
+        "purchaseOrderDate": "2026-11-17",
+        "subject": "Office Supplies & IT Equipment",
+        "remark": "Procurement for Q4",
+        "expectedDeliveryDate": "2026-11-25",
+        "shippingAddress": "Main Campus, Block A, Room 102",
+        "shippingCountry": "INDIA",
+        "shippingState": "MH",
+        "shippingCity": "Pune",
+        "shippingPincode": "45454",
+        "totalAmount": 100,
+        "totalTaxPercentage": 18,
+        "taxType": "GST",
+        "currency": "INR",
+        "vendorId":"c0fc1d29-cf0b-4fa0-81c6-dfee75220b87",
+        "userIds": [
+          "29a0a53a-dae8-43f6-b88f-040f2ced7145"
+        ],
+        "items": [
+          {
+            "itemId": "item-uuid-101",
+            "itemName": "Laptop",
+            "itemDescription": "Dell Laptop, Intel Core i5, 16GB RAM, 512GB SSD",
+            "itemCode": "IT-LAP-001",
+            "quantity": 2,
+            "unitPrice": 50000.00
+          },
+          {
+            "itemId": "item-uuid-101",
+            "itemName": "Laptop",
+            "itemDescription": "Dell Laptop, Intel Core i5, 16GB RAM, 512GB SSD",
+            "itemCode": "IT-LAP-001",
+            "quantity": 2,
+            "unitPrice": 50000.00
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
