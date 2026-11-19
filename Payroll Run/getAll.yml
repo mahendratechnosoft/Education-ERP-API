@@ -1,0 +1,29 @@
+info:
+  name: getAll
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payroll-run/getAll"
+  body:
+    type: json
+    data: |-
+      {
+      //   "year":"2026",
+      //   "month":"11",
+      //   "status":"DRAFT", //DRAFT,FINALIZED,PAID
+      // //   "instituteId":"019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+      //   "orgLevelOnly":false,
+      //   "creatorIds":["a5d3c151-2030-4261-b661-e4b2d826828c"],
+      //   "from":"2026-11-16T06:51:43.734656",
+      //   "to":"2026-11-16T06:51:43.734656"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

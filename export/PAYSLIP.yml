@@ -1,0 +1,28 @@
+info:
+  name: PAYSLIP
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/export"
+  body:
+    type: json
+    data: |-
+      {
+        "entityType": "PAYSLIP",
+        "fileName": "Payslip export 2",
+        "repeatParentRows": false,
+        "columns": [],
+        "filter": {
+          "runId":"e10761c5-1f76-4201-aa49-89fc4ab6c8e0"
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

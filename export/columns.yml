@@ -5,10 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/export/columns?entityType=TIMETABLE_ATTENDANCE"
+  url: "{{baseUrl}}/export/columns?entityType=PAYSLIP&runId=e10761c5-1f76-4201-aa49-89fc4ab6c8e0"
   params:
     - name: entityType
-      value: TIMETABLE_ATTENDANCE
+      value: PAYSLIP
+      type: query
+    - name: runId
+      value: e10761c5-1f76-4201-aa49-89fc4ab6c8e0
       type: query
   auth: inherit
 

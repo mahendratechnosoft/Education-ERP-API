@@ -1,0 +1,16 @@
+info:
+  name: runSummary
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/payslip/runSummary/e10761c5-1f76-4201-aa49-89fc4ab6c8e0"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
