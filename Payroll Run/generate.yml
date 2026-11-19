@@ -1,0 +1,23 @@
+info:
+  name: generate
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-run/generate"
+  body:
+    type: json
+    data: |-
+      {
+        "runId":"f050657b-2386-4a7a-938a-135534f87698",
+        "defaultPaymentDate":"2026-11-01"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

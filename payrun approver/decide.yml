@@ -1,0 +1,24 @@
+info:
+  name: decide
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-approval/decide"
+  body:
+    type: json
+    data: |-
+      {
+        "requestId": "3dbf05f5-740b-49c9-8820-2fa0c34fef57",
+        "decision": "APPROVE" //APPROVE or REJECT
+      //   "comment": "lksdjf"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

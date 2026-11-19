@@ -1,0 +1,23 @@
+info:
+  name: update-payment-date
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payslip/update-payment-date"
+  body:
+    type: json
+    data: |-
+      {
+        "payslipId":"13af6316-8bf7-49e7-9659-f46563d30a21",
+        "paymentDate":"2026-11-10"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

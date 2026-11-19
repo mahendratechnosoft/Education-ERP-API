@@ -1,0 +1,16 @@
+info:
+  name: delete
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/payroll-run/delete/c0d9b96b-6e30-4fd3-97d4-aaea9253e87a"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

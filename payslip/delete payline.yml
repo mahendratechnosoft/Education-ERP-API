@@ -1,0 +1,16 @@
+info:
+  name: delete payline
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/payslip/line/delete/25f29cd5-f0e5-49e9-addd-006c8bb85e79"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: payroll-approval
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-approval/submit"
+  body:
+    type: json
+    data: |-
+      {
+        "runId": "9bb53f40-26d9-43c7-97c7-027bb2cbc9f1",
+        "note": "pleae approve fast",
+        "approvers": [
+          {
+            "approverId": "e9e96dfc-a602-4d4c-a48f-79a43f39dcbe",
+            "signingTitle": "principle"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

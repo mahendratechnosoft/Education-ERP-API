@@ -1,0 +1,25 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-run/create"
+  body:
+    type: json
+    data: |-
+      {
+        "salaryMonth": "2026-09-01",
+        // Optional: null = organisation-level
+        "instituteId": "019a98d8-6a8b-4d87-a1de-f2efa6bc7d1b",
+        "instituteName": "instiute full name "
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

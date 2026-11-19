@@ -1,0 +1,35 @@
+info:
+  name: getAll
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payslip/getAll"
+  body:
+    type: json
+    data: |-
+      {
+        "runId": "e10761c5-1f76-4201-aa49-89fc4ab6c8e0",
+        "search": "",
+        "year": 2026,
+        "month": 11,
+        "status": "DRAFT", //DRAFT,FINALIZED,PAID
+        "userDetailsIds": ["7bc86e40-d40c-4638-8f2b-2d8d1c02d527"],
+      //   "departmentId": "db00e2cd-2703-4d13-9067-817ad3f2b60d",
+        "instituteId": "",
+        "orgLevelOnly": true,
+        "paymentStatus": "PENDING",
+        "paymentDate": "2026-11-30",
+        "creatorIds": ["c86ec49a-dd4d-4081-98fe-1044fcd37f5f"],
+        "from": "2026-11-17T10:23:05.120055",
+        "to": "2026-11-19T10:23:05.120055"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

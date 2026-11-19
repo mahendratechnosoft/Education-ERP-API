@@ -1,0 +1,16 @@
+info:
+  name: mark-paid
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-run/mark-paid/8a5e3574-b656-4ed4-9a17-c28ed5a36545"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

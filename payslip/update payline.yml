@@ -1,0 +1,26 @@
+info:
+  name: update payline
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/payslip/line/update"
+  body:
+    type: json
+    data: |-
+      {
+        "lineId": "25f29cd5-f0e5-49e9-addd-006c8bb85e79",
+        "componentName": "Manual updated",
+        "type": "EARNING",
+        "amount": 200.00,
+        "remarks": "check"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

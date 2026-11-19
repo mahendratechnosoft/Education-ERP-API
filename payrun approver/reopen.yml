@@ -1,0 +1,16 @@
+info:
+  name: reopen
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/payroll-approval/reopen/9bb53f40-26d9-43c7-97c7-027bb2cbc9f1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
