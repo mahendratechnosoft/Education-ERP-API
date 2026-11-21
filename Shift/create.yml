@@ -1,0 +1,34 @@
+info:
+  name: create
+  type: http
+  seq: 65
+
+http:
+  method: POST
+  url: http://localhost:8080/shift/create
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: json
+    data: |-
+      {
+        
+        "shiftName": "Morning Shift",
+        "shiftStartTime": "09:00:00",
+        "shiftEndTime": "17:00:00",
+        "workingHours": 8,
+        "breakMinutes": 60,
+        "halfDayHours": 4,
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

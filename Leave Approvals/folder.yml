@@ -1,7 +1,7 @@
 info:
   name: Leave Approvals
   type: folder
-  seq: 58
+  seq: 57
 
 request:
   auth: inherit

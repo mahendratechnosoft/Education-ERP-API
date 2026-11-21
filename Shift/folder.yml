@@ -1,0 +1,7 @@
+info:
+  name: Shift
+  type: folder
+  seq: 64
+
+request:
+  auth: inherit

@@ -1,7 +1,7 @@
 info:
   name: Purchase Order
   type: folder
-  seq: 65
+  seq: 60
 
 request:
   auth: inherit

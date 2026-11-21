@@ -1,0 +1,34 @@
+info:
+  name: update
+  type: http
+  seq: 62
+
+http:
+  method: PUT
+  url: http://localhost:8080/shift/update
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: json
+    data: |-
+      {
+        "id": "38059e16-c0e7-41d0-b1f8-461261d963ef",
+        "shiftName": "Morning Shift - Updated",
+        "shiftStartTime": "09:30:00",
+        "shiftEndTime": "17:30:00",
+        "workingHours": 8,
+        "breakMinutes": 60,
+        "halfDayHours": 4,
+        "active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

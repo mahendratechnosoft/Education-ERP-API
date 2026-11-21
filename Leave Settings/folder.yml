@@ -1,7 +1,7 @@
 info:
   name: Leave Settings
   type: folder
-  seq: 59
+  seq: 58
 
 request:
   auth: inherit

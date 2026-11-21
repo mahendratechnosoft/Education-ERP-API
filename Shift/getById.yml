@@ -1,0 +1,19 @@
+info:
+  name: getById
+  type: http
+  seq: 64
+
+http:
+  method: GET
+  url: http://localhost:8080/shift/getById/38059e16-c0e7-41d0-b1f8-461261d963ef
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

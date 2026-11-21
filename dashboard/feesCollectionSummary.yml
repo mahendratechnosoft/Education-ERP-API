@@ -1,0 +1,29 @@
+info:
+  name: feesCollectionSummary
+  type: http
+  seq: 61
+
+http:
+  method: PUT
+  url: http://localhost:8080/dashboard/feesCollectionSummary
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiI5OTMzNzc0Yi1kM2NjLTQ5YTAtODdhYi0wODVlMjg0YWM4M2MiLCJzdWIiOiJEdW1teU9yZzIwMCIsImlhdCI6MTc5NDk5OTQ3OCwiZXhwIjoxNzk1MDg1ODc4fQ.-cHKYjQNqI0kSOM07svxXKwFi3OUT6W9PY7VkpuTmNKTSpAfWx-5HB_3B-ar8bYqbqVubNHuGh6dCBVl209Q6w
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "",
+        "form": "2026-01-01T00:00:00",
+        "to": "2026-11-30T23:59:59"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

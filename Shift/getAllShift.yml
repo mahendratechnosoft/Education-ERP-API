@@ -1,0 +1,38 @@
+info:
+  name: getAllShift
+  type: http
+  seq: 66
+
+http:
+  method: PUT
+  url: http://localhost:8080/shift/getAllShift?page=0&size=10&sort=createdAt,desc
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+    - name: sort
+      value: createdAt,desc
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "instituteId": "",
+        "search": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

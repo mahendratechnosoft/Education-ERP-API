@@ -30,7 +30,7 @@ http:
         "shiftTime": "09:00 AM - 05:00 PM",
         "hiredate": "2024-06-10",
         "role": "FACULTY",
-        "roleId": "role-faculty-001",
+        "roleId": "8c406557-af11-46ce-a728-2282e83a8a75",
         "profileImage": "https://example.com/profile/rahul-sharma.jpg",
         "description": "Faculty member in the Computer Engineering department with experience in teaching and academic activities.",
         "address": "123 College Road, Shivaji Nagar",
@@ -40,7 +40,8 @@ http:
         "pincode": "411005",
         "instituteId": "inst-001",
         "instituteName": "ABC Institute of Technology",
-      "username":"kartik45654555",
+        "shiftId":"",
+      "username":"kartik45654555jjdddsd",
       "password":"kartik45655"
 
       }
@@ -51,3 +52,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
